@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    Dungeon Master HomePage
+     -->
+
+ 
+    <title>DND Academy: Cleric Spells</title>
+    
+    <link rel="icon" type="image/png" sizes="64x64" href="https://dndacademy.neocities.org/icon1.png">
+<style>
+body  {
+  margin: 0;
+  font-family: Luminari;
+  color: red;
+}
+  
+
+
+/*header*/
+header img {
+    height: 50px;
+    margin-left: 40px;
+}
+body {
+    height: 125vh;
+    background-image: url('https://dndacademy.neocities.org/PlayerResources/cleric3.jpeg');
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-attachment: fixed;
+    font-family: san-serif;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+main {
+    color: white;
+}
+
+header {
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+    
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+/*LINKS*/
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+}
+s10{
+  font-size:50px;
+  font-family: Luminari;
+  color: red;
+}
+s5{
+  font-size:100px;
+  font-family: Luminari;
+  color: #14D8A9;
+}
+
+e6{
+  font-size: 75px;
+  font-family: Luminari;
+  color: #14D8A9;
+}
+
+#container {
+  min-height: 125vh
+}
+#main {
+  overflow: auto;
+  padding-bottom: 50px;
+}
+#footer {
+  position: relative;
+  height: 50px;
+  margin-top: -50px;
+}
+
+/*Collapsables*/
+.accordion {
+  background-color:#777;
+  color: #14D8A9;
+  cursor: pointer;
+  padding:18px;
+  width: 50%;
+  border: line;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #555;
+}
+
+.accordion:after{
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  width: 48%;
+}
+
+/*Tables*/
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+</style>
+  </head>
+  
+  <body>
+  <button onclick="goBack()">Back</button>
+  <script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
+          <header>
+           <img src="https://dndacademy.neocities.org/icon.png">
+            <nav>
+                <ul>
+                    <li><a href="https://dndacademy.neocities.org/">Home</a></li>
+                    <li><a href="https://dndacademy.neocities.org/about.html">About</a></li>
+                    <li><a href="https://dndacademy.neocities.org/DungeonMaster/DungeonMaster.html">Dungeon Master</a></li>
+                    <li><a href="https://dndacademy.neocities.org/Player.html">Player</a></li>
+                    <li><a href="https://dndacademy.neocities.org/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+<div id="container">
+  <div id="main">
+        <s5><center><b>Cleric Spells</b></center></s5>
+<e6>Cantrips</e6><br>
+
+    <button class="accordion">Guidance</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S <br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>You touch a willing creature, granting it a 1d4 bonus to one ability check of its choice. The spell then ends. The target can roll the die before or after making the check.</p>
+    </div>
+        
+    <button class="accordion">Light</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, M (firefly or glowing moss) <br><b>Duration</b>: One hour<br></p>
+      <p>You use your action to touch an object no longer than 10 feet in any dimension, causing it to shine bright light of a color you choose in a 20-foot radius and dim light for an additional 20 feet. If the object is completely covered, the light is blocked. The spell ends if you cast it again or dismiss the light as an action.<br> 
+      <br>If your target is an object held or worn by a hostile creature, the creature must pass a Dexterity save to avoid being lit by the spell.</p>
+    </div>
+        
+    <button class="accordion">Mending</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (2 lodestones) <br><b>Duration</b>: Instantaneous<br></p>
+      <p>You take a minute to cast this spell, and it fixes a break or tear in an object you touch while leaving no traces of the damage. The damage can't be longer than 1 foot in any dimension. The spell can fix constructs and magic items, but can't restore magical properties.</p>
+    </div>
+            
+    <button class="accordion">Resistance</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (miniature cloak) <br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>You use your action to touch a willing creature, granting it a 1d4 bonus to one saving throw of its choice. The spell then ends. The target can roll the die before or after making the check.</p>
+    </div>
+                
+    <button class="accordion">Sacred Flame</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S <br><b>Duration</b>: Instantaneous<br></p>
+      <p>You use your action to call fiery radiance to descend upon a creature you can see, forcing it to pass a Dexterity save or take 1d8 radiant damage. The target gains no benefit from cover for this save.<br>
+      <br>The spell's damage die increases by one at levels 5th, 11th, and 17th level.</p>
+    </div>
+                    
+    <button class="accordion">Spare the Dying</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S <br><b>Duration</b>: Instantaneous<br></p>
+      <p>You use your action to touch a creature who is alive but at 0 hit points. It becomes stable. This spell has no effect on undead and constructs.</p>
+    </div>
+                       
+    <button class="accordion">Thaumaturgy</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>:V <br><b>Duration</b>: Instantaneous/1 minute<br></p>
+      <p>You create one of the following magical effects within range:</p>
+      <ul>
+        <li>Your voice booms up to three times as loud as normal for 1 minute.</li>
+        <li>You cause flames to flicker, brighten, dim, or change color for 1 minute.</li>
+        <li>You cause harmless tremors in the ground for 1 minute.</li>
+        <li>You create a sound that originates from a point of your choice within range.</li>
+        <li>You cause an unlocked door or window to fly open or slam shut.</li>
+        <li>You alter the appearance of your eyes for 1 minute.</li>
+      </ul>
+      <p>If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</p>
+    </div>
+                    
+    <button class="accordion">Toll the Dead</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S <br><b>Duration</b>: Instantaneous<br></p>
+      <p>A creature you can see must pass a Wisdom save or take necrotic damage. If it's missing any hit points, the damage die is 1d12; otherwise, it's 1d8.<br>
+      <br>The damage increases by 1d8 when you reach 5th, 11th, and 17th level.</p>
+    </div>
+                        
+    <button class="accordion">Word of Radiance</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 5 feet<br><b>Components</b>:V, M (Holy symbol) <br><b>Duration</b>: Instantaneous<br></p>
+      <p>Each creature of your choice that you can see within range must pass a Constitution save or take 1d6 radiant damage.<br>
+      <br>The damage increases by 1d6 when you reach 5th, 11th, and 17th level.</p>
+    </div>
+  
+  <e6>First Level</e6><br>
+
+    <button class="accordion">Bane</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S, M (blood) <br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Up to three creatures you can see must make Charisma saving throws. If a target fails, whenever they make an attack roll or saving throw before the spell ends, they must roll a d4 and subtract the number rolled.<br>
+      <br><b>At Higher Levels:</b> You can target one additional creature for each slot level above 1st.</p>
+    </div>
+    
+    <button class="accordion">Bless</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S, M (holy water) <br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>You bless up to three creatures of your choice. Whenever a target makes an attack roll or a saving throw, it can add a 1d4 to it.<br>
+      <br><b>At Higher Levels:</b> You can target one additional creature for each slot level above 1st.</p>
+    </div>
+    
+    <button class="accordion">Ceremony</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 hour (Ritual)<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (25gp of powdered silver; consumed) <br><b>Duration</b>: Instantaneous<br></p>
+      <p>When you cast the spell, choose one of the following rites, the target of which must be within 10 feet of you throughout the casting.</p>
+      <ul>
+        <li><b>Atonement:</b> You touch one willing creature whose alignment has changed, and you make a DC 20 Insight check. On a success, you restore the target to its original alignment.</li>
+        <li><b>Bless Water:</b> You touch one vial of water and cause it to become holy water.</li>
+        <li><b>Coming of Age:</b> You touch one young adult humanoid. For the next 24 hours, whenever the target makes an ability check, it can roll a d4 and add the number rolled to the ability check. A creature can benefit from this rite only once.</li>
+        <li><b>Dedication:</b> You touch one humanoid who wishes to be dedicated to your god's service. For the next 24 hours, whenever the target makes a saving throw, it can roll a d4 and add the number rolled to the save. A creature can benefit from this rite only once.</li>
+        <li><b>Funeral Rite:</b> You touch one corpse, and for the next 7 days, the target can't become undead by any means short of a Wish spell.</li>
+        <li><b>Wedding:</b> You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed.</li>
+      </ul>
+    </div>
+        
+    <button class="accordion">Command</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V<br><b>Duration</b>: 1 round<br></p>
+      <p>Choose a creature you can see to make a Wisdom save. If they fail, they follow a one-word command from you. The spell fails if the creature is undead, doesn't understand your language, if obeying the command will harm it, or if they can't follow the command.<br>
+      <br>You may use any single word and the DM will interpret it as they feel is appropriate. Common commands and their effects are as follows:</p>
+      <ul>
+        <li><b>Approach:</b> The target comes directly toward you and, if it is able to reach within 5 feet of you, it stops and ends its turn.</li>
+        <li><b>Drop:</b> The target drops whatever it is holding and then ends its turn.</li>
+        <li><b>Flee:</b> The target uses its turn to move directly away from you.</li>
+        <li><b>Grovel:</b> The target falls prone and then ends its turn.</li>
+        <li><b>Halt:</b> The target doesn't move and takes no actions. If a creature is flying and is able to stay aloft for the duration of the spell, it will move the minimum necessary for it to stay in the air.</li>
+      </ul>
+      <p><b>At Higher Levels:</b>You can affect one more creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
+    </div>
+        
+    <button class="accordion">Create or Destroy Water</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S, M (water(creat)/Sand(destroy))) <br><b>Duration</b>: Instantaneous<br></p>
+      <p>In an open container, you can create up to 10 gallons of drinkable water. You may also produce a rain that falls within a 30-foot cube and extinguishes open-air flames.<br>
+      <br>You can destroy the same amount of water in an open container, or destroy a 30-foot cube of fog.<br>
+      <br><b>At Higher Levels:</b> Increase the amount of water by another 10 gallons, or the cube size by 5 feet, for each level above 1st.</p>
+    </div>
+        
+    <button class="accordion">Cure Wounds</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S <br><b>Duration</b>: Instantaneous<br></p>
+      <p>A creature you touch regains hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.<br>
+      <br><b>At Higher Levels:</b> The healing increases by 1d8 for each slot level above 1st.</p>
+    </div>
+        
+    <button class="accordion">Detect Evil and Good</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>: V, S <br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>You sense the location of an aberration, celestial, elemental, fey, fiend, or undead if it is within 30 feet of you. If there is a place or object that has been magically consecrated or desecrated within 30 feet, you are also able to locate it.<br>
+      <br>You are unable to sense these things through 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+    </div>
+        
+    <button class="accordion">Detect Magic</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Self<br><b>Components</b>: V, S <br><b>Duration       </b>: Concentration, up to 10 minutes<br></p>
+      <p>An aura forms around objects or creatures you can see, indicating that it is magical. It must be within 30 feet. You also learn its school of magic, if it has one.<br>     
+      <br>This spell can't detect magic through 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+    </div>
+        
+    <button class="accordion">Detect Poison and Disease</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Self<br><b>Components</b>: V, S, M (Yew leaf)         <br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>If they exist or appear within 30 feet, you sense the presence of poisons, poisonous creatures, and diseases. Their location and type also become known to you.<br>
+      <br>This spell is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+    </div>
+            
+    <button class="accordion">Guiding Bolt</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>: V, S <br><b>Duration</b>: 1 round<br></p>
+      <p>Make a ranged spell attack against a creature you can see. On a hit, the target takes 4d6 radiant damage, and before the end of your next turn, the next attack roll made on it has advantage.<br>
+      <br><b>At Higher Levels:</b> The damage increases by 1d6 for each slot level above 1st.</p>
+    </div>
+                
+    <button class="accordion">Healing Word</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 bonus action<br><b>Range</b>: 60 feet<br><b>Components</b>: V <br><b>Duration</b>: Instantaneous<br></p>
+      <p>A creature you can see regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.<br>
+      <br><b>At Higher Levels:</b> The healing increases by 1d4 for each slot level above 1st.</p>
+    </div>
+                    
+    <button class="accordion">Infict Wounds</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S <br><b>Duration</b>: Instantaneous<br></p>
+      <p>Make a melee spell attack. On a hit, the target takes 3d10 necrotic damage.<br>
+      <br><b>At Higher Levels:</b> The damage increases by 1d10 for each slot level above 1st.</p>
+    </div>
+                        
+    <button class="accordion">Protection from Evil and Good</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (Holy water/powdered silver and iron; consumed) <br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>One willing creature you touch is protected against aberrations, celestials, elementals, fey, fiends, and undead. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target already has such an effect by one of them, the target has advantage on any new saving throw against it.</p>
+    </div>
+                            
+    <button class="accordion">Purify Food and Drink</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: 10 feet<br><b>Components</b>: V, S <br><b>Duration</b>: Instantaneous<br></p>
+      <p>Non-magical food and drink within a 5-foot-radius sphere centered on a point is rendered free of poison and disease.</p>
+    </div>
+                                
+    <button class="accordion">Sanctuary</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 bonus action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S, M (Small silver mirror) <br><b>Duration</b>: 1 minute<br></p>
+      <p>Until the spell ends, any creature who targets a creature you choose with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects.<br>
+      <br>If the warded creature makes an attack or casts a spell that affects an enemy creature, or deals damage to another creature, this spell ends.</p>
+    </div>
+                                    
+    <button class="accordion">Shield of Faith</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 bonus action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S, M (Parchment with holy text) <br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>A creature of your choice gets a +2 bonus to AC for the duration.</p>
+    </div>
+    
+    <e6>Second Level</e6><br>
+    
+
+    <button class="accordion">Aid</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S, M (Strip of white cloth) <br><b>Duration</b>: 8 hours<br></p>
+      <p>Up to three creatures you choose have their current and maximum hit points increased by 5 while the spell lasts.<br>
+      <br><b>At Higher Levels:</b> The hit points are increased by an additional 5 for each slot level above 2nd.</p>
+    </div>
+                                
+    <button class="accordion">Augury</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute (Ritual)<br><b>Range</b>: Self<br><b>Components</b>: V, S, M (25gp of marked stick-like trinkets) <br><b>Duration</b>: Instantaneous<br></p>
+      <p>Some otherworldly being gives you an omen through the use of some divining tool. Asking it about the result of something you intend to do in the next 30 minutes will reveal one of four omens:</p>
+      <ul>
+        <li>If things will turn out well,<b> Weal</b>,</li>
+        <li>If they will turn out badly, <b>Woe</b>,</li>
+        <li>If both good and bad, <b>Weal and woe</b>,</li>
+        <li>or if nothing particularly good or bad will happen, you will see <b>Nothing</b> at all.</li>
+      </ul>
+      <p>The otherworldly being isn't capable of accounting for changes in circumstances between now and doing the thing, and if you try to ask again before taking a long rest, there is a 25% chance the reading will be random.</p>
+    </div>
+        
+    <button class="accordion">Blindness/Deafness</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V<br><b>Duration</b>: 1 minute<br></p>
+      <p>A creature you can see becomes blinded or deafened unless they succeed at a Constitution saving throw. At the end of its turns, the creature can make another save. If successful, the spell ends.<br>
+      <br><b>At Higher Levels:</b> You can target one additional creature for each slot level above 2nd.</p>
+    </div>
+    
+    <button class="accordion">Calm Emotions</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Each humanoid in a 20-foot-radius sphere must make a Charisma saving throw. A creature can choose to fail this save. If a creature fails its saving throw, choose one of the following effects:</p>
+      <ul>
+        <li>You can suppress any effect causing them to be charmed or frightened. When this spell ends, any     suppressed effect resumes, provided that its duration has not expired.</li>
+        <li>You can make them indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target takes damage or if it witnesses any of its friends being harmed.</li>
+    </ul>
+    <p>When the spell ends, the creature becomes hostile again, unless the DM rules otherwise.</p>
+    </div>
+            
+    <button class="accordion">Continual Flame</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (50gp of ruby dust; consumed)<br><b>Duration</b>: Until dispelled<br></p>
+      <p>A flame with a torch's brightness forms on an object you touch. It looks like a normal flame, but it emits no heat and doesn't use oxygen. The flame can be covered or hidden, but not put out.</p>
+    </div>
+               
+    <button class="accordion">Enhance Ability</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (fur or feather) <br><b>Duration</b>:Concentration, up to 1 minute<br></p>
+      <p>A creature you touch gains one of the following effects until the spell ends.</p><br>
+    <ul>
+     <li>Bear's Endurance: The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.</li>
+      <li>Bull's Strength: The target has advantage on Strength checks, and its carrying capacity doubles.</li>
+      <li>Cat's Grace: The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.</li>
+      <li>Eagle's Splendor: The target has advantage on Charisma checks.</li>
+      <li>Fox's Cunning: The target has advantage on Intelligence checks.</li>
+      <li>Owl's Wisdom: The target has advantage on Wisdom checks.</li>
+      </ul>
+      <p><br><b>At Higher Levels:</b> You can target one additional creature for each slot about 2nd.</p>
+    </div> 
+                
+    <button class="accordion">Find Traps</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>: V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>The basic nature of any traps within range becomes known to you, though you do not learn their location. Natural weaknesses in the environment are not considered traps for the purposes of this spell, but any environmental feature that might harm you or result in some undesirable consequence, and was set up by someone intentionally to do so, is.</p>
+    </div>
+                    
+    <button class="accordion">Gentle Repose</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (Salt and copper on corpse's eyes; must remain for duration)<br><b>Duration</b>: 10 days<br></p>
+      <p>For the duration, the target is protected from decay and can't become undead. The spell also extends the time limit on raising the target from the dead from spells such as Raise Dead.</p>
+    </div>
+                           
+    <button class="accordion">Hold Person</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S, M (Straight piece of iron) <br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>A humanoid that you can see becomes paralyzed unless they succeed on a Wisdom saving throw. At the end of its turns, it can make another Wisdom save, ending the paralysis on a success.<br>
+      <br><b>At Higher Levels:</b> You can target one additional humanoid, all within 30 feet of each other, for each level above 2nd.</p>
+    </div>
+                                      
+    <button class="accordion">Lesser Restoration</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You touch a creature and end either one disease or one of the following conditions: blinded, deafened, paralyzed, or poisoned.</p>
+    </div>
+                                      
+    <button class="accordion">Locate Object</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>: V, S, M (forked twig)<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>You sense the direction and direction of movement of an object known to you that you describe or name, as long as it is within 1,000 feet of you. An object is considered known to you if you've been within 30 feet of it and seen it.<br>
+      <br>Instead, you can also sense the nearest object that you can describe in a basic way.<br>
+      <br>The spell doesn't work on lead objects or if there is any thickness of lead between you and the object.</p>
+    </div>
+                                      
+    <button class="accordion">Prayer of Healing</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: 30 feet<br><b>Components</b>: V<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Up to six creatures of your choice that you can see regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
+      <br><b>At Higher Levels:</b> The healing increases by 1d8 for each slot level above 2nd.</p>
+    </div>
+                                          
+    <button class="accordion">Protection from Poison</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S<br><b>Duration</b>: 1 hour<br></p>
+      <p>You neutralize one poison you can name, or one at random, from a creature if it is poisoned. While the spell lasts, the target has advantage against being poisoned and resistance to poison damage.</p>
+    </div>
+                                                    
+    <button class="accordion">Silence</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: 120 feet<br><b>Components</b>: V, S<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>Within a 20-foot-radius sphere, no sounds can be made or heard. Creatures within the sphere are effectively deafened, cannot cast spells with a verbal component, and are immune to thunder damage.</p>
+    </div>
+                                                    
+    <button class="accordion">Spiritual Weapon</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 bonus action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S<br><b>Duration</b>: 1 minute<br></p>
+      <p>You create a floating weapon that lasts for the duration or until you cast this spell again. It can take any form you choose. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes 1d8 force damage + your spellcasting ability modifier.<br>
+      <br>As a bonus action, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.<br>
+      <br><b>At Higher Levels:</b> The damage increases by 1d8 for every two slot levels above the 2nd.</p>
+    </div>
+                                                        
+    <button class="accordion">Warding Bond</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (50gp platinum rings worn for duration)<br><b>Duration</b>: 1 hour<br></p>
+      <p>While the target is within 60 feet of you, it gains a +1 bonus to armor class and saving throws, and it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage. The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can dismiss the spell as an action.</p>
+    </div>
+                                                               
+    <button class="accordion">Zone of Truth</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S<br><b>Duration</b>: 10 minutes<br></p>
+      <p>A creature that starts its turn in or enters the 15-foot sphere area you designate can no longer outright lie while in the area unless it succeeds on a Charisma saving throw. You are aware of who passes and who fails and the affected creatures are aware of the restriction.</p>
+    </div>
+    
+    
+     <e6>Third Level</e6><br>
+    
+    
+    <button class="accordion">Animate Dead</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: 10 feet<br><b>Components</b>: V, S, M (Blood, flesh, bone dust)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Reanimate and control a pile of bones or the corpse of a medium or small humanoid to become a skeleton or zombie, respectively. The undead creature is under control for 24 hours at which point it no longer follows your will. You can reassert control, for another 24 hours, of up to four of these creatures if you cast this spell on them again before the 24 hours is up.<br>
+      <br>While they are under your control and within 60 feet of you, you can command them as a bonus action. A single command can be issued to as many of your undead minions as you wish and can be specific, like directing movement and what action they will take, or be more general, as in guarding a person or place. They will continue to follow your orders until they are complete or the spell ends, but if you don't command them at all, they will do nothing except defend themselves against attack.<br>
+      <br><b>At Higher Levels:</b> You animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones.</p>
+    </div>
+        
+    <button class="accordion">Beacon of Hope</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>As many creatures as desired have advantage on Wisdom and death saves. The targets also regain the maximum number of hit points possible when healed.</p>
+    </div>
+        
+    <button class="accordion">Bestow Curse</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>A creature you touch must make a Wisdom saving throw or receive one of the following curses:</p>
+    <ul>
+      <li>Disadvantage on ability checks and saves for an ability score of your choice
+      <li>Disadvantage on attacks against you
+      <li>Wastes turns unless it passes a Wisdom save at the start of each turn
+      <li>Takes an extra 1d8 necrotic damage whenever hit by one of your attacks or spells
+    </ul>
+      <p>A DM can rule that another curse of your choosing is acceptable as long as its effect is on a level with the above options.<br>
+      <br>The spell ends early if a Remove Curse spell is cast on the target.<br>
+      <br><b>At Higher Levels:</b> If you cast this spell using a 4th level slot, the possible duration is extended to 10 minutes. If you use a 5th or 6th level slot, the duration is 8 hours. If you use a 7th or 8th level slot, the duration is 24 hours. If you use a 9th level slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration.</p>
+    </div>
+        
+    <button class="accordion">Clairvoyance</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: 1 mile<br><b>Components</b>: V, S, M (100gp jeweled horn(hearing)/100gp glass eye (seeing))<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>You make an invisible sensor in a location you've visited or seen, or in an obvious location that you haven't. The sensor remains for the duration and can’t be interacted with.<br>
+      <br>Choose seeing or hearing. You can see or hear as if you are where the sensor is. As an action, you can switch which sense.<br>
+      <br>If something can see it, it sees a luminous, intangible, fist-sized orb.</p>
+    </div>
+                
+    <button class="accordion">Create Food and Water</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You create 45 pounds of food and 30 gallons of water on the ground or in containers. The food spoils if uneaten after 24 hours. The water is clean and doesn't go bad.</p>
+    </div>
+                        
+    <button class="accordion">Daylight</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S<br><b>Duration</b>: 1 hour<br></p>
+      <p>A 60-foot-radius sphere of light spreads from a point you choose. The sphere is bright light and sheds dim light for an additional 60 feet.<br>
+      <br>If you chose an object you are holding or one that isn't being worn or carried, the light shines from and moves with the object. Completely covering the object with something opaque blocks the light.<br>
+      <br>If any of this spell's area overlaps with darkness made by a spell of 3rd level or lower, the darkness is dispelled.</p>
+    </div>
+            
+    <button class="accordion">Dispel Magic</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>: V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Choose one object, creature, or magic effect within range. Any spell of 3rd level or lower on the target ends. If the spell is 4th level or higher, make a check using your spellcasting ability. The DC is 10 + the spell's level. On a success, the spell ends.<br>
+      <br><b>At Higher Levels:</b> You automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.</p>
+    </div>
+                        
+    <button class="accordion">Feign Death</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (Graveyard dirt)<br><b>Duration</b>: 1 hour<br></p>
+      <p>You touch a willing creature and for the duration or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells. The target is blinded and incapacitated, and its speed drops to 0. The target has resistance to all damage except psychic. If the target is diseased or poisoned when you cast the spell, or becomes diseased or poisoned while under the spell's effect, it has no effect until the spell ends.</p>
+    </div>
+                        
+    <button class="accordion">Glyph of Warding</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 hour<br><b>Range</b>: Touch <br><b>Components</b>: V, S, M (Incense, 200gp powdered diamond; consumed)<br><b>Duration</b>: Until dispelled/triggered<br></p>
+      <p>You inscribe a glyph either upon a surface or within an object that can be closed to hide it. It can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast the spell, it ends without being triggered. You decide what triggers the glyph when you cast the spell. Once the glyph is triggered, this spell ends.<br>
+      <br>You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics, creature kind, or alignment. You can also set conditions for creatures that don't trigger the glyph.<br>
+      <br>The glyph is nearly invisible and requires a successful Investigation check to be found.<br>
+      <br>When you inscribe the glyph, choose explosive runes or a spell glyph.
+      <ul>
+        <li><b>Explosive Runes:</b> When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere. The sphere spreads around corners. Each creature must make a Dexterity save. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failure (your choice when you create the glyph), or half damage on a success.</li>
+        <li><b>Spell Glyph:</b> You can store a prepared spell of 3rd level or lower by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the triggering creature. If the spell affects an area, the area is centered on that creature. If the spell summons hostile or harmful things, they appear as close as possible to the creature and attack it. If the spell requires concentration, it lasts for the full duration.</li>
+      </ul>
+      <p><b>At Higher Levels:</b> The damage of an explosive rune glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding.</p>
+    </div>
+                        
+    <button class="accordion">Life Transference</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet <br><b>Components</b>: V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You take 4d8 necrotic damage, and one creature you choose and can see regains hit points equal to twice the damage you take.<br>
+      <br><b>At Higher Levels:</b> The damage increases by 1d8 for each slot level above 3rd.</p>
+    </div>
+                                
+    <button class="accordion">Magic Circle</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: 10 feet<br><b>Components</b>: V, S, M (Holy water/100gp of powdered silver and iron; consumed)<br><b>Duration</b>: 1 hour<br></p>
+      <p>A 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a visible point on the ground appears. Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways:<br>
+      <ul>
+        <li>The creature can't willingly enter the cylinder by nonmagical means. If the creature tries to teleport or use interplanar travel, it must succeed on a Charisma save.</li>
+        <li>The creature has disadvantage on attacks against targets in the cylinder.</li>
+        <li>Targets within the cylinder can't be charmed, frightened, or possessed by the creature.</li>
+      </ul>
+      <p>When you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it.<br>
+      <br><b>At Higher Levels:</b> The damage of an explosive rune glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding.</p>
+    </div>
+                                        
+    <button class="accordion">Mass Healing Word</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 bonus action<br><b>Range</b>: 60 feet<br><b>Components</b>: V<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Up to six creatures you can see regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.<br>
+      <br><b>At Higher Levels:</b> The healing increases by 1d4 for each slot level above 3rd.</p>
+    </div>
+                                                
+    <button class="accordion">Meld into Stone</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Touch<br><b>Components</b>: V, S<br><b>Duration</b>: 8 hours<br></p>
+      <p>You and all you carry touch and meld into a stone object or surface large enough to fully contain your body. This uses your movement. Once in, you cannot be detected by non-magical means. You can't see anything that happens outside of it, and have disadvantage on Perception checks to hear things outside it. You are still aware of time passage. You can also cast spells on yourself. You can use your movement to leave the stone where you entered, but otherwise are immobile.<br>
+      <br>Minor damage to the stone doesn't hurt you, but destruction enough to make it no longer fit you expels you from the stone and deals 6d6 bludgeoning damage. If the stone is completely destroyed or transmuted into another substance, you are expelled and take 50 bludgeoning damage. If expelled, you appear and fall prone in the nearest empty space to where you entered.</p>
+    </div>
+                                                        
+    <button class="accordion">Protection from Energy</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>Touch a willing creature. They have resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder. </p>
+    </div>
+                                                                
+    <button class="accordion">Remove Curse</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>All curses affecting a creature or object you touch end. If the object is a cursed magic item, the curse remains, but its owner's attunement ends. </p>
+    </div>
+                                                                    
+    <button class="accordion">Revivify</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (300gp diamond; consumed)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Touch a creature that's died in the last minute. It revives with 1 hit point. This spell can't revive a creature that died of old age, and it can't restore missing body parts. </p>
+    </div>
+                                            
+    <button class="accordion">Sending</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Unlimited<br><b>Components</b>:V, S, M (Fine copper wire)<br><b>Duration</b>: 1 round<br></p>
+      <p>You send a message of up to 25 words to a creature you're familiar with. The creature hears the message in its mind, recognizes you if it knows you, and can send an answer immediately. Creatures with Intelligence scores of at least 1 understand the meaning of your message.<br>
+      <br>You can send the message across any distance. If the target is on a different plane than you, there is a 5 percent chance that the message doesn't arrive.</p>
+    </div>
+                                                
+    <button class="accordion">Speak with Dead</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 10 feet<br><b>Components</b>:V, S, M (Burning incense)<br><b>Duration</b>: 10 minutes<br></p>
+      <p>You partially revive a corpse to ask it questions. It resumes death after the duration. The corpse must still have a mouth and can't be undead. A corpse can only be targeted by this spell once every 10 days.<br>
+      <br>You can ask up to five questions. It knows only what it knew in life, including languages. Answers are usually brief, cryptic, or repetitive, and it is under no compulsion to offer a truthful answer. This spell doesn't return the soul to the body, so it can't learn new information, doesn't understand anything that's happened since it died, and can't speculate about the future.</p>
+    </div>
+                                                    
+    <button class="accordion">Spirit Guardians</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self (15ft radius)<br><b>Components</b>:V, S, M (Holy symbol)<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>Spirits float around you up to 15 feet away. If you are good or neutral, they appear angelic or fey. If you are evil, they appear fiendish.<br>
+      <br>When you cast the spell, you can choose unlimited creatures you can see to be unaffected. An affected creature's speed is halved in the area, and when it enters the area for the first time on a turn or starts its turn there, it must make a Wisdom save. On failure, the creature takes 3d8 radiant damage (good/neutral) or 3d8 necrotic damage (evil). On a success, the creature takes half damage.<br>
+      <br><b>At Higher Levels:</b> The damage increases by 1d8 for each slot level above 3rd.</p>
+    </div>
+                                                            
+    <button class="accordion">Tongues</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, M (Clay model of ziggurat)<br><b>Duration</b>: 1 hour<br></p>
+      <p>A creature you touch understands any spoken language it hears. When it speaks, any creature that knows at least one language can hear and understand it.</p>
+    </div>
+                                                            
+    <button class="accordion">Water Walk</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: 30 feet<br><b>Components</b>:V, S, M (Cork)<br><b>Duration</b>: 1 hour<br></p>
+      <p>Up to 10 willing creatures you can see gain the ability to move across liquid as if it were solid ground. Lava still deals damage from its heat. If you target a creature submerged in liquid, the target floats to the surface at a rate of 60 feet per round.</p>
+    </div>
+  
+  
+  
+  <e6>Fourth Level</e6><br>
+    
+
+    <button class="accordion">Banishment</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S, M (Item distasteful to target)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>A creature you can see must pass a Charisma save or be banished to another plane of existence.<br>
+      <br>If the target is native to the plane you're on, you banish it to a harmless demiplane. While there, it's incapacitated. It remains until the spell ends, to which it reappears in the space it left or in the nearest empty space if it's occupied.<br>
+      <br>If the target is native to a different plane of existence than the one you're on, it is banished to its home plane. If the spell ends before 1 minute has passed, it reappears in the space it left or in the nearest empty space if it's occupied. Otherwise, the target doesn't return.<br>
+      <br><b>At Higher Levels:</b> You can target one additional creature for each slot above 4th.</p>
+    </div>
+    
+    <button class="accordion">Control Water</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 300 feet<br><b>Components</b>:V, S, M (Water, dust)<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>A creature you can see must pass a Charisma save or be banished to another plane of existence.<br></p>
+      <ul>
+        <li><b>Flood:</b> The water level rises by up to 20 feet. If the area includes a shore, the water spills onto land. The water level remains elevated until the spell ends or you choose a different effect. If you choose an area in a large body of water, you create a 20-foot tall wave that travels from one side of the area to the other, then crashes down. Any Huge or smaller vehicles in the wave's path are carried with. If struck by the wave, they have a 25% chance of capsizing. The wave repeats on the start of your next turn while the flood lasts.</li>
+        <li><b>Part Water:</b> You cause the water to move apart and create a trench. The trench extends across the spell's area. The separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. Once the spell ends, the water refills in the trench over the course of the next round.</li>
+        <li><b>Redirect Flow:</b> You cause flowing water to move in a direction you choose, even if the water has to flow in unlikely directions. The water moves as you direct it, but once it's out of the spell’s area, it resumes flow based on the terrain. The water moves until the spell ends or you choose a different effect.</li>
+        <li><b>Whirlpool:</b> You cause a whirlpool to form in the center of a body of water at least 50 feet wide and 25 feet deep. The whirlpool is a vortex 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. Swimming away requires an Athletics check. When a creature enters the vortex or starts its turn there, it must make a Strength save. On failure, it takes 2d8 bludgeoning damage and is caught in the vortex. On a success, it takes half damage and isn't caught. A creature caught can use its action to try to swim away, but has disadvantage the check. The first time an object enters the vortex, it takes 2d8 bludgeoning damage. This damage occurs each round it remains in the vortex.</li>
+      </ul>
+    </div>
+        
+    <button class="accordion">Death Ward</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S<br><b>Duration</b>: 8 hours<br></p>
+      <p>Touch a creature. The first time it drops to 0 hit points from taking damage, it instead drops to 1 hit point and the spell ends. If the target is subjected to an effect that would kill it instantly without dealing damage, the effect is negated and the spell ends.</p>
+    </div>
+            
+    <button class="accordion">Divination</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (incense and a sacrificial offering appropriate to your religion together worth at least 25gp; consumed)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Touch a creature. The first time it drops to 0 hit points from taking damage, it instead drops to 1 hit point and the spell ends. If the target is subjected to an effect that would kill it instantly without dealing damage, the effect is negated and the spell ends.</p>
+    </div>
+                
+    <button class="accordion">Freedom of Movement</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (Leather strap bound to appendage)<br><b>Duration</b>: 1 hour<br></p>
+      <p>Touch a willing creature. Its movement is unaffected by difficult terrain, and spells and magical effects can't reduce its speed or cause it to be paralyzed or restrained.<br>
+      <br>The target can spend 5 feet of movement to automatically escape from nonmagical restraints. Additionally, being underwater imposes no penalties on its movement or attacks.<br>
+    </div>
+                    
+    <button class="accordion">Guardian of Faith</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>:V<br><b>Duration</b>: 8 hours<br></p>
+      <p>A Large spectral guardian hovers in an unoccupied space of your choice that you can see. It occupies the space and is indistinct except for a sword and shield that have the symbol of your deity.<br>
+      <br>Any hostile creature that moves within 10 feet of the guardian for the first time must pass a Dexterity save. It takes 20 radiant damage on a failed save, or half damage on a success. The guardian vanishes when it has dealt a total of 60 damage.<br>
+    </div>
+                         
+    <button class="accordion">Locate Creature</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (Bloodhound fur)<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>Describe or name a creature familiar to you. You sense the direction to the creature's location, as long as its within 1000 feet of you. If the creature is in motion, you know the direction of its movement. The spell can locate a specific creature known to you or the nearest of a specific kind, as long as you have seen it while within 30 feet of it. If the creature is in a different form, the spell doesn't work. This spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.</p>
+    </div>
+                           
+    <button class="accordion">Stone Shape</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (Soft clay)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Touch a stone object of Medium size or smaller, or a section of stone no more than 5 feet in any dimension, and form it into a shape. The object you make can have two hinges and a latch, but finer detail isn't possible.</p>
+    </div>
+    
+    <e6>Fifth Level</e6><br>
+    
+                               
+    <button class="accordion">Commune</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute (Ritual)<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (Incense, holy water)<br><b>Duration</b>: 1 minute<br></p>
+      <p>You contact your deity and ask up to three yes or no questions. You must ask before the spell ends. You receive a correct answer for each question.<br>
+      <br>You may receive "unclear" as an answer if the deity doesn't know. If a one-word answer is misleading or contrary to the deity's interests, the DM can offer a short phrase instead.<br>
+      <br>If you cast the spell again before finishing a long rest, there is a cumulative 25 percent chance for each casting that you get no answer. The DM rolls this in secret.</p>
+    </div>
+        
+    <button class="accordion">Contagion</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S<br><b>Duration</b>: 7 days<br></p>
+      <p>Make a melee spell attack. On hit, the target is poisoned.<br>
+      <br>At the end of each of the target's turns, it makes a Constitution save. If the target succeeds on three of these saves, it is no longer poisoned, and the spell ends. If the target fails three of these saves, the target is no longer poisoned, but choose one of the diseases below. The target is subject to the chosen disease for the spell's duration</p>
+      <ul>
+        <li><b>Blinding Sickness:</b> The target has disadvantage on Wisdom checks and saves, and is blinded.</li>
+        <li><b>Filth Fever:</b> The target has disadvantage on Strength checks, saves, and attack rolls that use Strength.</li>
+        <li><b>Flesh Rot:</b> The target has disadvantage on Charisma checks and is vulnerable to all damage.</li>
+        <li><b>Mindfire:</b> The target has disadvantage on Intelligence checks and saves, and during combat it acts as if it's under the effects of Confusion.</li>
+        <li><b>Seizure:</b> The target has disadvantage on Dexterity checks, saves, and attack rolls that use Dexterity.</li>
+        <li><b>Slimy Doom:</b> The target has disadvantage on Constitution checks and saves. Additionally, when it takes damage, it is stunned until the end of its next turn. </li>
+      </ul>
+    </div>
+                                   
+    <button class="accordion">Dawn</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S, M (100gp sunburst pendant)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Until the spell ends, a 30-foot radius, 40-foot high cylinder of sunlight shines on a location you choose.<br>
+      <br>When the cylinder appears, each creature in it must make a Constitution save, taking 4d10 radiant damage on a fail and half on a success. It must also make this save when it ends its turn in the space.<br>
+      <br>If you're within 60 feet of the cylinder, you can move it up to 60 feet as a bonus action.</p>
+    </div>
+            
+    <button class="accordion">Dispel Evil and Good</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (Holy water/powdered silver and iron)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>For the duration, celestials, elementals, fey, fiends, and undead not from the material plane have disadvantage on attack rolls against you. You can end the spell early by using either of the following special functions.</p>
+      <ul>
+        <li><b>Break Enchantment:</b> Touch a creature that is charmed, frightened, or possessed by a celestial, elemental, fey, fiend, or undead. It's no longer under the effect.</li>
+        <li><b>Dismissal:</b> Make a melee spell attack against a celestial, elemental, fey, fiend, or undead. On hit, it must pass a Charisma save or be sent back to its home plane if it isn't there. Undead are sent to Shadowfell and fey are sent to the Feywild. </li>
+      </ul>
+    </div>
+                                       
+    <button class="accordion">Flame Strike</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S, M (Sulfur)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Each creature in a 10-foot-radius, 40-foot-high cylinder must make a Dexterity save. Targets take 4d6 fire and 4d6 radiant damage on a failed save, or half as much on a success.<br>
+      <br><b>At Higher Levels:</b> The fire or radiant damage (your choice) increases by 1d6 for each slot level above 5th.</p>
+    </div>
+                    
+    <button class="accordion">Geas</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: 60 feet<br><b>Components</b>:V<br><b>Duration</b>: 30 days<br></p>
+      <p>You place a command on a creature that you can see, forcing it to do or refrain from doing some action or activity you decide. The command can be anything except something that would obviously cause the target to die.<br>
+      <br>If the creature can't understand you, this spell has no effect. If it can understand you, it must succeed a Wisdom save or become charmed by you. While the creature is charmed, it takes 5d10 psychic damage each time it does something that directly counters to your instructions, but no more than once each day.<br>
+      <br>You can end the spell early by using an action to dismiss it. A Remove Curse, Greater Restoration, or Wish spell also ends it.<br>
+      <br><b>At Higher Levels:</b> When you cast this using a 7th or 8th level spell slot, the duration is 1 year. If you use a 9th level slot, the spell lasts until it is ended by one of the spells mentioned above.</p>
+    </div>
+                        
+    <button class="accordion">Greater Restoration</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (100gp diamond dust; consumed)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Touch a creature. You can reduce its exhaustion level by one, or end one of the following effects on it:</p>
+      <ul>
+        <li>One effect that charmed of petrified it.</li>
+        <li>One curse or attunment to a cursed item.</li>
+        <li>Any reduction to one ability score</li>
+        <li>One effect reducing hit point maximum.</li>
+      </ul>
+    </div>
+                        
+    <button class="accordion">Hallow</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 24 hours<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (1000gp herbs, oils, incense; consumed)<br><b>Duration</b>: Until dispelled<br></p>
+      <p>Touch an area. It can have a radius up to 60 feet, and the spell fails if the radius includes an area already affected by Hallow. The affected area is subject to the following effects.<br>
+      <br>Celestials, elementals, fey, fiends, and undead can't enter the area, nor can they charm, frighten, or possess creatures in it. Any creature under said effect(s) by them is no longer affected after entering the area. You can exclude types of creatures from this.<br>
+      <br>You can bind an extra effect to the area. Choose an effect from the following list. When a creature that would be affected enters the spell's area for the first time or starts its turn there, it can make a Charisma save. On a success, the creature ignores the extra effect until it leaves.</p>
+      <ul>
+        <li><b>Courage:</b> Affected creatures can't be frightened while in the area.</li>
+        <li><b>Darkness:</b> Darkness fills the area. Normal and magical light lower than this spell's casted level, can't illuminate the area.</li>
+        <li><b>Daylight:</b> Bright light fills the area. Magical darkness lower than this spell's casted level, can't put it out.</li>
+        <li><b>Energy Protection:</b> Affected creatures in the area have resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing.</li>
+        <li><b>Energy Vulnerability:</b> Affected creatures in the area have vulnerability to one damage type of your choice, except for bludgeoning, piercing, or slashing.</li>
+        <li><b>Everlasting Rest:</b> Dead bodies in the area can't be turned into undead.</li>
+        <li><b>Extradimensional Interference:</b> Affected creatures can't move or travel using teleportation or interplanar means.</li>
+        <li><b>Fear:</b> Affected creatures are frightened while in the area.</li>
+        <li><b>Silence:</b> No sound can emanate from within the area, and no sound can reach into it.</li>
+        <li><b>Tongues:</b> Affected creatures can communicate with any other creature in the area, even if they don't share a common language.</li>
+      </ul>
+    </div>
+                        
+    <button class="accordion">Holy Weapon</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 bonus action<br><b>Range</b>: Touch<br><b>Components</b>:V, S<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>Until the spell ends, a weapon you touch emits bright light in a 30-foot radius and dim light for an additional 30 feet. Attacks made with it deal an extra 2d8 radiant damage on a hit. If it isn't already a magic weapon, it becomes one for the duration.<br>
+      <br>As a bonus action, you can dismiss the spell and cause the weapon to release a burst of radiance. Each creature of your choice that you can see within 30 feet of the weapon[1] must make a Constitution save. On a failure, it takes 4d8 radiant damage and it is blinded for 1 minute. On a successful save, it takes half damage and isn't blinded. At the end of each of its turns, a blinded creature can make a Constitution save, ending the blindness on a success.</p>
+    </div>
+                            
+    <button class="accordion">Insect Plague</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 300 feet<br><b>Components</b>:V, S, M (Sugar, grain, fat)<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>Locusts fill a 20-foot-radius sphere. It spreads around corners, remains for the duration, and its area is lightly obscured and difficult terrain.<br>
+      <br>When the swarm appears, each creature in its area must make a Constitution save. A creature takes 4d10 piercing damage on a fail, or half on a success. It must also make this saving throw when it enters the spell's area for the first time or ends its turn there.<br>
+      <br><b>At Higher Levels:</b> The damage increases by 1d10 for each slot level above the 5th.</p>
+    </div>
+                          
+    <button class="accordion">Legend Lore</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (250gp incense, 4 50gp ivory strips)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Name or describe a person, place, or object. The spell gives you a summary of significant lore about it. If the thing you named isn't of legendary importance, you gain no information. The more information you already have, the more detailed the information you receive is.</p>
+    </div>
+                               
+    <button class="accordion">Mass Cure Wounds</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Choose up to six creatures in a 30-foot-radius sphere. Each regain hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.<br>
+      <br><b>At Higher Levels:</b> The healing increases by 1d8 for each level above 5th.</p>
+    </div>
+                                
+    <button class="accordion">Planar Binding</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 hour<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S, M (1000gp jewel; consumed)<br><b>Duration</b>: 24 hours<br></p>
+      <p>You attempt to bind a celestial, elemental, fey, or fiend to your service. It must be within range for the entire casting of the spell. At completion, it makes a Charisma save. If it fails, it's bound to serve you for the duration. If the creature was brought by another spell, its duration is extended.<br>
+      <br>A bound creature must follow your instructions to the best of its ability. It obeys the letter of your instructions, but if it's hostile, it may twist your words to achieve its own goals. If the creature carries out your instructions completely before the spell ends, it reports this to you if you're on the same plane of existence. If you're not, it returns to where you bound it and remains there until the spell ends.<br>
+      <br><b>At Higher Levels:</b> When you cast this spell using a 6th-level slot, the duration increases to 10 days. With a 7th-level slot, 30 days. With an 8th-level slot, 180 days. At 9th-level, a year and a day.</p>
+    </div>
+                                    
+    <button class="accordion">Raise Dead</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 hour<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (500gp diamond; consumed)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Touch a creature dead for no longer than 10 days. If its soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point. This spell has no effect on undead.<br>
+      <br>This spell neutralizes poisons and cures nonmagical diseases. This spell doesn't remove magical effects. If they aren't removed prior to casting, they return when the creature comes back to life.<br>
+      <br>This spell closes all mortal wounds, but doesn't restore missing body parts. If the creature doesn't have body parts or organs necessary for survival, the spell fails.<br>
+      <br>Coming back from the dead is an ordeal. The target takes a -4 penalty to all attacks, saves, and ability checks. Every time it finishes a long rest, the penalty is reduced by 1 until it disappears.</p>
+    </div>
+    
+        <button class="accordion">Scrying</button>
+    <div class="panel">
+    <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (1000gp focus)<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+    <p>You can see and hear a creature you choose that's on the same plane as you. The target must make a Wisdom save, modified by how well you know it and the sort of physical connection you have. If it knows you're casting this spell, it can fail the save voluntarily.<br>
+    <table style= width:50%>
+    <tr>
+    <th>Knowledge</th>
+    <th>Save Modifier</th>
+    </tr>
+    <tr>
+    <td>You've heard of the target</td>
+    <td>+5</td>
+    </tr>
+    <tr>
+    <td>You've met the target</td>
+    <td>+0</td>
+    </tr>
+    <tr>
+    <td>You know the target well</td>
+    <td>-5</td>
+    </table>
+    <table style= width:50%>
+    <tr>
+    <th>Conncetion</th>
+    <th>Save Modifier</th>
+    </tr>
+    <tr>
+    <td>Likeness or picture</td>
+    <td>-2</td>
+    </tr>
+    <tr>
+    <td>Possession or garment</td>
+    <td>-4</td>
+    </tr>
+    <tr>
+    <td>Part of body</td>
+    <td>-10</td>
+    </tr>
+    </table>
+    <p>On a successful save, the target isn't affected, and you can't use this spell on it again for 24 hours. On a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if it were there. The sensor moves with the target. A creature that can see invisible objects sees it as a luminous fist-sized orb.<br>
+    <br>Instead of targeting a creature, you can choose a location you've seen before. When you do, the sensor appears at that location and doesn't move.</p>
+    </div> 
+  
+    <e6>Sixth Level</e6><br>
+  
+    <button class="accordion">Blade Barrier</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 90 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>You create a wall of magical blades up to 100 feet long, 20 feet high, and 5 feet thick; or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover and is difficult terrain.<br>
+      <br>When a creature enters the wall's area for the first time on a turn or starts its turn there, it must make a Dexterity save. On a fail, the creature takes 6d10 slashing damage, or half as much on a success.</p>
+    </div>
+      
+    <button class="accordion">Create Undead</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: 10 feet<br><b>Components</b>:V, S, M (Per corse: Clay pot with grave dirt, clay pot with water, 150gp black onyx)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>This spell can only be cast at night. Up to three corpses of Medium or Small humanoids you choose become ghouls under your control.<br>
+      <br>You can mentally command a ghoul as a bonus action if they are within 120 feet of you. You can command multiples at once if you issue the same command. You decide what action the ghoul will take and where it will move during its next turn, or issue a general command. If you issue no commands, the ghoul only defends itself against hostile creatures. Once given an order, the ghoul will follow it until its task is complete.<br>
+      <br>The ghouls are under your control for 24 hours. To maintain control of the ghouls for another 24 hours, you must recast this spell on up to three of them before the current 24 hours end.<br>
+      <br><b>At Higher Levels:</b> With a 7th-level spell slot, you can control up to four ghouls. With an 8th-level slot, five ghouls, or two ghasts or wights. With a 9th-level slot, six ghouls, three ghasts or wights, or two mummies.</p>
+    </div>
+        
+    <button class="accordion">Find the Path</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (100gp divination tools, object from destination)<br><b>Duration</b>: Concentration, up to 1 day<br></p>
+      <p>This spell finds you the shortest, most direct route to a location you are familiar with. If you name a destination on another plane of existence, a destination that moves, or a destination that isn't specific, the spell fails.<br>
+      <br>For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. Whenever you are presented with a choice of paths along the way, you automatically determine which path is the most direct route to the destination.</p>
+    </div>
+            
+    <button class="accordion">Forbiddance</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes (Ritual)<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (Holy water, rare incense, 1000gp powdered ruby)<br><b>Duration</b>: 1 day<br></p>
+      <p>You create a ward up to 40,000 sq ft big and 30 ft high against magical travel. For the duration, creatures can't teleport into the area or use portals to enter the area. The spell also proofs the area against planar travel.<br>
+      <br>In addition, the spell damages celestials, elementals, fey, fiends, and undead. Choose one or more types when you cast the spell. When one enters the spell's area or starts its turn there, it takes 5d10 radiant or necrotic damage-- your choice when you cast this spell. When you cast this spell, you can make a password. A creature that says the password as it enters takes no damage.<br>
+      <br>The spell's area can't overlap with another Forbiddance spell. If you cast this spell every day for 30 days in the same location, it lasts until dispelled, and the material components are consumed on the last casting.</p>
+    </div>
+                
+    <button class="accordion">Harm</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>A creature you can see must make a Constitution save. It takes 14d6 necrotic damage on a fail, or half on a success. Also on a fail, its hit point maximum is reduced by the damage it took for 1 hour, but the spell can't reduce it below 1. Creatures immune to disease are unaffected by this spell, and effects that end disease relieve the reduced hit point maximum.</p>
+    </div>
+                    
+    <button class="accordion">Heal</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Choose a creature that you can see. It regains 70 hit points. Blindness, deafness, and any diseases end. This spell has no effect on undead or constructs.<br>
+      <br><b>At Higher Levels:</b> The healing increases by 10 for each slot level above the 6th.</p>
+    </div>
+                        
+    <button class="accordion">Heroes' Feast</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: 30 feet<br><b>Components</b>:V, S, M (1000gp gem-encrusted bowl; consumed)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You bring forth a feast. It takes 1 hour to consume and disappears after, and the effects don't set in until the hour is over. Up to twelve creatures can partake in the feast.<br>
+      <br>Any creature partaking in the feast is cured of all diseases and poison, becomes immune to poison and being frightened, and makes Wisdom saves with advantage. Its hit point maximum increases by 2d10, and it gains the same number of hit points. These benefits last for 24 hours.</p>
+    </div>
+                            
+    <button class="accordion">Planar Ally</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You ask a being of cosmic power you know for aid. That entity sends a celestial, elemental, or fiend loyal to it to aid you. It appears in an unoccupied space within range. If you know a specific creature's name, you can request it, though you might get a different creature anyway.<br>
+      <br>When the creature appears, it's under no compulsion to behave in any particular way. You can ask the creature to do something in exchange for payment, but it isn't obliged to do so. The requested task can range from simple to complex. You must be able to communicate with the creature to bargain for its services.<br>
+      <br>After the creature completes the task or the duration of service expires, the creature returns to its home plane after reporting back to you. If you are unable to agree on a price, the creature returns to its home plane.<br>
+      <br>A creature enlisted to join your group counts as a member of it, receiving a full share of experience points.</p>
+    </div>
+                    
+    <button class="accordion">True Seeing</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (25gp eye ointment of mushroom powder, saffron, and fat; consumed)<br><b>Duration</b>: 1 hour<br></p>
+      <p>For the duration, the target has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all with range of 120 feet.</p>
+    </div>
+                    
+    <button class="accordion">Word of Recall</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 5 feet<br><b>Components</b>:V<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary, appearing in the nearest unoccupied space to the spot you chose. If you cast this spell without first preparing a sanctuary, the spell has no effect.<br>
+      <br>You must designate a sanctuary by casting this spell within a location dedicated or strongly linked to your deity. If you attempt to cast the spell in an area that isn't dedicated to your deity, the spell has no effect.</p>
+    </div>
+    
+    <e6>Eighth Level</e6><br>
+    
+    <button class="accordion">Antimagic Field</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self (10ft radius)<br><b>Components</b>:V, S, M (Iron filings/ powder iron)<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>A 10-foot-radius invisible sphere surrounds you. Within the sphere, spells can't be cast, summoned creatures disappear, and magic items become normal. The sphere moves with you. Summoned creatures re-appear once the sphere leaves their space, and magic items are restored upon being removed from the sphere.<br>
+      <br>Magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't enter or affect things within it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.<br>
+      <br>The sphere cannot be dispelled by magic, nor can two antimagic fields suppress each other.</p>
+    </div>
+        
+    <button class="accordion">Control Weather</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: Self (5 mile radius)<br><b>Components</b>:V, S, M (Burning incense, eath and wood in water)<br><b>Duration</b>: Concentration, up to 8 hours<br></p>
+      <p>You take control of the weather within 5 miles of you. You must be outdoors. If you move to a place where you don't have a clear path to the sky, the spell ends early.<br>
+      <br>When you cast the spell, you change the current weather conditions. It takes 1d4 x 10 minutes for the new conditions to take effect. Once they do, you can change the conditions again. When the spell ends, the weather gradually returns to normal.<br>
+      <br>When you change the weather conditions, find a condition on the table and change its stage by one. When changing the wind, you can change its direction.<br></p>
+          <table style= width:50%>
+    <tr>
+    <th>Precipitation</th>
+    </tr>
+    </table>
+    <table style= width:50%>
+    <tr>
+    <th>Stage</th>
+    <th>Condition</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>Clear</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td>Light Clouds</td>
+    </tr>
+    <tr>
+    <td>3</td>
+    <td>Overcast or ground fog</td>
+    </tr>
+    <tr>
+    <td>4</td>
+    <td>Rain, hail, or snow</td>
+    </tr>
+    <tr>
+    <td>5</td>
+    <td>Heay rain, hail, or snow</td>
+    </tr>
+    </table>
+    <table style= width:50%>
+    <tr>
+    <th>Temperature</th>
+    </tr>
+    </table>
+    <table style= width:50%>
+    <tr>
+    <th>Stage</th>
+    <th>Condition</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>Unbearable heat</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td>Hot</td>
+    </tr>
+    <tr>
+    <td>3</td>
+    <td>Warm</td>
+    </tr>
+    <tr>
+    <td>4</td>
+    <td>Cool</td>
+    </tr>
+    <tr>
+    <td>5</td>
+    <td>Cold</td>
+    </tr>
+    <tr>
+    <td>6</td> 
+    <td>Artic cold</td>
+    </tr>
+    </table>
+    <table style= width:50%>
+    <tr>
+    <th>Wind</th>
+    </tr>
+    </table>
+    <table style=width:50%>
+    <tr>
+    <th>Stage</th>
+    <th>Condition</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>Calm</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td>Moderate wind</td>
+    </tr>
+    <tr>
+    <td>3</td>
+    <td>Strong wind</td>
+    </tr>
+    <tr>
+    <td>4</td>
+    <td>Gale</td>
+    </tr>
+    <tr>
+    <td>5</td>
+    <td>Storm</td>
+    </tr>
+    </table>
+    </div>
+    
+    <button class="accordion">Earthquake</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 500 feet<br><b>Components</b>:V, S, M (Dirt, rock, clay)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on a point you can see. The ground in the area becomes difficult terrain. Each creature on the ground must make a concentration save if applicable.<br>
+      <br>When you cast this spell, and at the end of your turns, each creature on the ground in the area must make a Dexterity saving throw. On a failure, it's knocked prone.<br>
+      <br>This spell can have additional effects depending on the terrain in the area, as determined by the DM.<br>
+      <ul>
+        <li><b>Fissures:</b> 1d6 fissures open in the spell's area at the start of your next turn in locations chosen by the DM. Each is 1d10 x 10 feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must pass a Dexterity save or fall in. A creature that saves moves with the fissure's edge. A fissure that opens beneath a structure causes it to automatically collapse.</li>
+        <li><b>Structures:</b> The tremor deals 50 bludgeoning damage to any structure in contact with the ground when you cast the spell and at the start of your turns. If a structure drops to 0 hit points, it collapses. Any creature within half the distance of the structure's height must make a Dexterity save. On a failure, it takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble. It can make a DC 20 Athletics check as an action to escape. The DM can adjust the DC depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall prone or become buried.</li>
+      </ul>
+    </div>
+        <button class="accordion">Holy Aura</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (1000gp tiny reliquary holding a sacred relic)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Creatures of your choice in a 30-foot radius when you cast the spell shed 5 feet of dim light and have advantage on all saving throws. Other creatures have disadvantage on attack rolls against them. In addition, when a fiend or an undead hits an affected creature with a melee attack, they must pass a Constitution save or be blinded until the spell ends.</p>
+    </div>
+
+
+<e6>Ninth Level</e6><br>
+
+    <button class="accordion">Astral Projection</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 hour<br><b>Range</b>: 10 feet<br><b>Components</b>:V, S, M (Per target: 1000gp jacinth, 100gp silver bar; consumed)<br><b>Duration</b>: Special<br></p>
+      <p>You and up to eight willing creatures within range project yourselves into the Astral Plane. The material body you leave behind is unconscious and in a state of suspended animation.<br>
+      <br>Your astral body resembles your normal form in almost every way. The main difference is a cord that extends from your back and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. If the cord is cut, you die instantly.<br>
+      <br>Your astral form can pass through portals leading to any other plane. If you enter a new plane or return to the plane you were on, your body and possessions are transported, allowing you to re-enter your body. Any damage or other effects that apply to your astral form have no effect on your physical body, nor do they persist when you return to it.<br>
+      <br>The spell ends for you and your companions when you use your action to dismiss it. When the spell ends, the affected creature returns to its physical body and awakens.<br>
+      <br>A successful Dispel Magic spell used against an astral or physical body ends the spell for that creature. If a creature's original body or astral form drops to 0 hit points, the spell ends for it and it returns to its body.<br>
+      <br>If you are returned to your body prematurely, your companions remain in their astral forms and must find their own way back to their bodies.</p>
+    </div>
+    
+    <button class="accordion">Gate</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S, M (5000gp diamond)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>You make a portal in an unoccupied space you can see that goes to a precise location on a different plane of existence. The portal is a circular opening 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for the duration.<br>
+      <br>The portal has a front and a back, but travel is only possible through the front. Anything that moves through it is instantly transported to the other plane, appearing in the nearest unoccupied space.<br>
+      <br>Planar rulers can prevent portals from opening in their presence or anywhere in their domains.<br>
+      <br>When you cast this spell, you can say the name of a specific creature and it will be pulled to the nearest unoccupied space next to you.<br>
+      <br>**If that creature is on a plane other than the one you are on, the portal opens in the named creature's immediate vicinity and draws the creature through it to the nearest unoccupied space on your side of the portal.  You gain no special power over the creature and it's free to act as desired.</p>
+    </div>
+        
+    <button class="accordion">Mass Heal</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You restore up to 700 hit points, divided among any number of creatures that you can see. Creatures are also cured of all diseases, blindness, and deafness. This spell has no effect on undead or constructs.</p>
+    </div>
+        
+    <button class="accordion">True Resurrection</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 hour<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (Holy water, 25000gp diamonds; consumed)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the creature's soul is free and willing, it's restored to life with all its hit points.<br>
+      <br>This spell closes all wounds, neutralizes any poison, cures all diseases, and lifts any curses. The spell replaces damaged or missing organs and limbs. If the creature was undead, it is restored to its non-undead form.<br>
+      <br>The spell can provide a new body if the original no longer exists, in which case you must speak the creature's name. The creature appears in an unoccupied space you choose within 10 feet of you.</p>
+    </div>
+    
+    
+    
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++){
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    }
+    else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+  </script>  
+  </div>
+</div>
+<footer id="footer">
+  <center><img src="dnd-logo.png" alt="logo" ></center>
+  </footer>
+</body>
+
+</html>
+

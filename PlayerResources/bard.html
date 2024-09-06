@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    Dungeon Master HomePage
+     -->
+
+ 
+    <title>DND Academy: Bard Spells</title>
+    
+    <link rel="icon" type="image/png" sizes="64x64" href="https://dndacademy.neocities.org/icon1.png">
+<style>
+body  {
+  margin: 0;
+  color: red;
+  font-family: Luminari;
+}
+  
+
+/*header*/
+header img {
+    height: 50px;
+    margin-left: 40px;
+}
+body {
+    height: 125vh;
+    background-image: url('https://dndacademy.neocities.org/PlayerResources/bard.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: san-serif;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+main {
+    color: white;
+}
+
+header {
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+    
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+/*LINKS*/
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+s5{
+  font-size:100px;
+  font-family: Luminari;
+  color: #14D8A9;
+}
+e6{
+  font-size: 75px;
+  font-family: Luminari;
+  color: #14D8A9;
+}
+
+#container {
+  min-height: 125vh
+}
+#main {
+  overflow: auto;
+  padding-bottom: 50px;
+}
+#footer {
+  position: relative;
+  height: 50px;
+  margin-top: -50px;
+}
+
+/*Collapsables*/
+.accordion {
+  background-color:#777;
+  color: #14D8A9;
+  cursor: pointer;
+  padding:18px;
+  width: 50%;
+  border: line;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #555;
+}
+
+.accordion:after{
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  width: 48%;
+}
+
+/*Tables*/
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+</style>
+  </head>
+  
+  <body>
+ <button onclick="goBack()">Back</button>
+  <script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
+          <header>
+           <img src="https://dndacademy.neocities.org/icon.png">
+            <nav>
+                <ul>
+                    <li><a href="https://dndacademy.neocities.org/">Home</a></li>
+                    <li><a href="https://dndacademy.neocities.org/about.html">About</a></li>
+                    <li><a href="https://dndacademy.neocities.org/DungeonMaster/DungeonMaster.html">Dungeon Master</a></li>
+                    <li><a href="https://dndacademy.neocities.org/Player.html">Player</a></li>
+                    <li><a href="https://dndacademy.neocities.org/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header><br>
+        
+
+<div id="container">
+  <div id="main">
+        <s5><center><b>Bard Spells</b></center></s5>
+ <e6>Cantrips</e6><br>
+        
+    <button class="accordion">Blade Ward</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>: V, S <br><b>Duration</b>: One Round<br></p>
+      <p>Tracing an arcane sigil in the air, you grant yourself resistance to bludgeoning, piercing, and slashing damage dealt by weapons until the end of your next turn.</p>
+    </div>
+    
+    <button class="accordion">Dancing Lights</button>
+    <div class="panel">
+      <p><b>Casting Time: </b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>: V, S, M (a bit of phosphorus or wychwood, or a glowworm)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius. 
+    <br>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range. </p>
+    </div>  
+        
+    <button class="accordion">Friends</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>: S, M (make-up applied to face) <br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Using your action, choose a creature you can see that isn't hostile toward you. You gain advantage on Charisma checks toward it for the duration. When the spell ends, the creature realizes you used magic on it and becomes hostile, possibly attacking or getting other payback.</p>
+    </div>
+    
+    <button class="accordion">Light</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, M (firefly or glowing moss) <br><b>Duration</b>: One hour<br></p>
+      <p>You use your action to touch an object no longer than 10 feet in any dimension, causing it to shine bright light of a color you choose in a 20-foot radius and dim light for an additional 20 feet. If the object is completely covered, the light is blocked. The spell ends if you cast it again or dismiss the light as an action.<br> 
+      <br>If your target is an object held or worn by a hostile creature, the creature must pass a Dexterity save to avoid being lit by the spell.</p>
+    </div>
+    
+    <button class="accordion">Mage Hand</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>:V, S <br><b>Duration</b>: One minute<br></p>
+      <p>You use your action to create a spectral, floating hand at a point you choose. Once made, you can use your action to control the hand. It can move up to 30 feet at a time, but can't be more than 30 feet away from you or it will vanish. The hand is able to manipulate objects, open an unlocked door or container, put away or get an item out of an open container, or pour out a vial's contents. It can't attack, activate magic items, or carry more than 10 pounds. You use an action to dismiss the hand before the end of the duration.</p>
+    </div>
+    
+    <button class="accordion">Mending</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (2 lodestones) <br><b>Duration</b>: Instantaneous<br></p>
+      <p>You take a minute to cast this spell, and it fixes a break or tear in an object you touch while leaving no traces of the damage. The damage can't be longer than 1 foot in any dimension. The spell can fix constructs and magic items, but can't restore magical properties.</p>
+    </div>
+    
+    <button class="accordion">Message</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>:V, S, M (copper wire) <br><b>Duration</b>: One round<br></p>
+      <p>You point at a creature and whisper a message that only it can hear, and it can whisper back a reply that only you hear. You can cast through objects if you know the target and that it's beyond the wall, but magical silence, 1 foot of stone, 1 inch of metals, a thin sheet of lead, and 3 feet of wood will block the spell. The spell can move through corners and other openings</p>
+    </div>
+    
+    <button class="accordion">Minor Illusion</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>:S, M (fleece) <br><b>Duration</b>: One minute<br></p>
+      <p>You create a sound or an image of an object that lasts for the duration. The illusion ends early if you dismiss it as an action or cast this spell again.<br>
+
+<br>If you create a sound, it can be any volume and noise. The sound can continue unabated for the duration, or you can make sounds at different times.<br>
+
+<br>If you create an image of an object, it must be no larger than a 5-foot cube. The image can't create any sensory effects. Physical interaction with the image reveals it to be an illusion.<br>
+
+<br>A creature can use its action to make an Investigation check on the illusion. If it succeeds, the illusion becomes faint to it</p>
+    </div>
+        
+    <button class="accordion">Prestidigitation</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 10 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You create one of the following effects:</p>
+<ul>
+  <li>You create a harmless sensory effect.</li>
+  <li>You light or put out a small fire.</li>
+  <li>You clean or soil an object no larger than 1 cubic foot.</li>
+  <li>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</li>
+  <li>You make a small mark appear on an object or surface for 1 hour.</li>
+  <li>You create a nonmagical trinket or a hand-sized illusory image. It lasts until the end of your next turn.</li>
+</ul>
+<p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss an effect as an action.</p>
+    </div>
+    
+    <button class="accordion">Thunderclap</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self (5ft radius)<br><b>Components</b>: S <br><b>Duration</b>: Instantaneous<br></p>
+      <p>Each creature in range besides you must pass a Constitution save or take 1d6 thunder damage. Thunder can be heard up to 100 feet away. <br>
+      <br><b>At Higher Levels:</b>The damage increases by 1d6 when you reach 5th, 11th, and 17th level.</p>
+    </div>
+        
+    <button class="accordion">True Strike</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: S<br><b>Duration</b>: Concentration, up to 1 round<br></p>
+      <p>On your next turn, your first attack roll on the target has advantage.</p>
+    </div>
+    
+    <button class="accordion">Vicious Mockery</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V <br><b>Duration</b>: Instantaneous<br></p>
+      <p>Choose a creature you can see. If it can hear you, it must pass a Wisdom save or take 1d4 psychic damage and have disadvantage on its next attack roll before the end of its next turn. <br>
+
+<br>The damage increases by 1d4 when you reach 5th, 11th, and 17th level.</p>
+    </div>
+    
+ <e6>First Level</e6><br>
+         
+    <button class="accordion">Animal Friendship</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S, M (morsel of food) <br><b>Duration</b>: 24 Hours<br></p>
+      <p>Choose a beast that you can see. It must be able to see and hear you. If its Intelligence is 4 or higher, the spell fails. Otherwise, it must pass a Wisdom save or be charmed by you. If you or one of your companions harms it, the spell ends.</p>
+    </div>
+             
+    <button class="accordion">Bane</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S, M (blood) <br><b>Duration</b>: Concentration, up to one minute<br></p>
+      <p>Up to three creatures you can see must make Charisma saving throws. If a target fails, whenever they make an attack roll or saving throw before the spell ends, they must roll a d4 and subtract the number rolled.<br>
+
+<br><b>At Higher Levels:</b> You can target one additional creature for each slot level above 1st.</p>
+    </div>
+                 
+    <button class="accordion">Charm Person</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S<br><b>Duration</b>: One Hour<br></p>
+      <p>A humanoid you can see must succeed on a Wisdom saving throw, with advantage if you are currently fighting it, or it becomes charmed by you until the spell ends or someone in your party harms it. It will know it has been charmed when the spell ends.<br>
+      <br><b>At Higher Levels:</b> You can target one additional creature for each slot level above 1st. They must be within 30 feet of each other when you target them.</p>
+    </div>
+              
+    <button class="accordion">Comprehend Languages</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Self<br><b>Components</b>: V, S, M (soot, salt) <br><b>Duration</b>: One hour<br></p>
+      <p>You understand any spoken language that you hear while the spell lasts. While touching the surface where words are written, you can also understand any written language you see. One page of text can be read in approximately 1 minute.<br>
+
+<br>Secret codes in text and glyphs that aren't part of any written language can't be decoded with this spell.</p>
+    </div>
+    
+    <button class="accordion">Cure Wounds</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S <br><b>Duration</b>: Instantaneous<br></p>
+      <p>A creature you touch regains hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.<br>
+      <br><b>At Higher Levels:</b> The healing increases by 1d8 for each slot level above 1st.</p>
+    </div>
+    
+    <button class="accordion">Detect Magic</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Self<br><b>Components</b>: V, S <br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>An aura forms around objects or creatures you can see, indicating that it is magical. It must be within 30 feet. You also learn its school of magic, if it has one.<br>
+      
+<br>This spell can't detect magic through 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+    </div>
+    
+    <button class="accordion">Disguise Self</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>: V, S <br><b>Duration</b>: One hour<br></p>
+      <p>Until the spell ends or you use an action to dismiss it, you can disguise yourself magically in many ways. You can appear to be shorter or taller by about a foot and change the appearance of your body weight, but you cannot change the basic structure of your body. The illusion can include your clothes, armor, weapons, and other belongings on your person.<br>
+<br>The illusion is only visual, so any sort of physical contact will only interact with the real size and shape of you. Someone may also use an action to make an investigation check against your spell save DC.</p>
+    </div>
+    
+    <button class="accordion">Dissonant Whispers</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V<br><b>Duration</b>: Instantaneous<br></p>
+      <p>The target must make a Wisdom saving throw. On a failed save, it takes 3d6 psychic damage and must immediately use its reaction to move as far as its speed allows away from you. The creature doesn't move into obviously dangerous ground. On a successful save, the target takes half as much damage and doesn't have to move. A deafened creature automatically succeeds.<br>
+<br><b>At Higher Levels:</b> The damage increases by 1d6 for each slot level above 1st.</p>
+    </div>
+    
+    <button class="accordion">Earth Tremor</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self (10ft radius)<br><b>Components</b>: V, S <br><b>Duration</b>: Instantaneous<br></p>
+      <p>Each creature besides you must make a Dexterity save. On a fail, a creature takes 1d6 bludgeoning damage and is knocked prone. If the ground in that area is loose earth, it becomes difficult terrain until cleared. Each 5-foot diameter portion requires at least 1 minute to clear by hand.<br>
+<br><b>At Higher Levels:</b> The damage increases by 1d6 for each slot level above 1st.</p>
+    </div>
+    
+    <button class="accordion">Faerie Fire</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V <br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Blue, green, or violet lights outline objects inside a 20-foot cube of space. All creatures in the area make a Dexterity save or be cast in light as well. The light cast by this spell illuminates a 10-foot radius.<br>
+      <br>Attacks against affected creatures are made with advantage, and affected creature or object (if applicable) will no longer be invisible.</p>
+    </div>
+        
+    <button class="accordion">Feather Fall</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 reaction<br><b>Range</b>: 60 feet<br><b>Components</b>: V, M (Feather/down) <br><b>Duration</b>: 1 minute<br></p>
+      <p>Choose up to five falling creatures. Its descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for it.</p>
+    </div>
+            
+    <button class="accordion">Healing Word</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 bonus action<br><b>Range</b>: 60 feet<br><b>Components</b>: V <br><b>Duration</b>: Instantaneous<br></p>
+      <p>A creature you can see regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.<br>
+      <br><b>At Higher Levels:</b> The healing increases by 1d4 for each slot level above 1st.</p>
+    </div>
+                
+    <button class="accordion">Heroism</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S <br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Until the spell ends, a creature you touch is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points.<br>
+      <br><b>At Higher Levels:</b> You can target one additional creature for each slot level above 1st.</p>
+    </div>
+                    
+    <button class="accordion">Identify</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute (Ritual)<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (100gp pearl, owl feather) <br><b>Duration</b>: Instantaneous<br></p>
+      <p>Touch one object through the casting of the spell. If it is a magic object, you learn its properties and how to use them, if it requires attunement, and how many charges it has if any. You learn if any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.<br>
+      <br>If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.</p>
+    </div>
+                        
+    <button class="accordion">Illusory Script</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute (Ritual)<br><b>Range</b>: Touch<br><b>Components</b>: S, M (10gp lead ink; consumed) <br><b>Duration</b>: 10 days<br></p>
+      <p>You write on suitable writing material and imbue it with an illusion that lasts for the duration.<br>
+      <br>To you and any creatures you designate when you cast the spell, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing is unintelligible. Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know.<br>
+      <br>If the spell is dispelled, the original script and the illusion disappear.<br>
+      <br>A creature with truesight can read the hidden message.</p>
+    </div>
+                        
+    <button class="accordion">Longstrider</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (dirt) <br><b>Duration</b>: 1 hour<br></p>
+      <p>The target’s speed increases by 10 feet until the spell ends.<br>
+      <br><b>At Higher Levels:</b> You can target one additional creature for each slot level above 1st.</p>
+    </div>
+                          
+    <button class="accordion">Silent Image</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S, M (fleece) <br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>You create an image that is no larger than a 15-foot cube. The image appears at an unoccupied spot and lasts for the duration. The image is only visual. If anything passes through it, it's revealed to be an illusion.<br>
+      <br>You can use your action to cause the image to move to any spot in range. As the image changes location, you can alter its appearance so that its movements appear natural for the image.<br>
+     <br> A creature that uses its action to examine the image can determine that it is an illusion with a successful Investigation check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.</p>
+    </div>
+                                
+    <button class="accordion">Speak with Animals</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Self<br><b>Components</b>: V, S<br><b>Duration</b>: 10 minutes<br></p>
+      <p>Although limited by the intelligence of the beast, you can understand and speak with beasts. You learn about the beast's experiences over the last day, as well as local places and creatures.<br>
+      <br>If your DM allows, the beast may also complete a small task for you, if you can successfully convince it to do so.</p>
+    </div>
+                                      
+    <button class="accordion">Tasha's Hideous Laughter</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S, M (Tiny tarts, feather)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>A creature of your choice must succeed on a Wisdom save or fall prone, becoming incapacitated and unable to stand up for the duration. A creature with an Intelligence score of 4 or less isn't affected.<br>
+      <br>At the end of each of its turns, and each time it takes damage, the target can make another Wisdom save. The target has advantage if it's triggered by damage. On a success, the spell ends.</p>
+    </div>
+                              
+    <button class="accordion">Thunderwave</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self (15ft cube)<br><b>Components</b>: V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Each creature in a 15-foot cube originating from you must make a Constitution save. On failure, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a success, the creature takes half damage and isn't pushed.<br>
+      <br>Unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect. The spell emits a thunderous boom audible out to 300 feet.<br>
+      <br><b>At Higher Levels:</b> The damage increases by 1d8 for each slot level above 1st.</p>
+    </div>
+                                  
+    <button class="accordion">Unseen Servant</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S, M (string, wood)<br><b>Duration</b>: 1 hour<br></p>
+      <p>This spell creates an invisible force that performs tasks at your command until the spell ends.<br>
+      <br>It has an AC of 10, 1 hit point, and a Strength of 2, and it can't attack. If it drops to 0 hit points, the spell ends. Once on each of your turns, as a bonus action, you can mentally command the servant to move up to 15 feet and interact with an object.<br>
+      <br>The servant can perform simple tasks that a human servant could do.<br>
+      <br>Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command. If you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.</p>
+    </div>
+    
+    
+    
+ <e6>Second Level</e6><br>
+ 
+ 
+    <button class="accordion">Animal Messenger</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S, M (morsel of food)<br><b>Duration</b>: 24 hours<br></p>
+      <p>A tiny beast will send a message for you, but you must be able to see it within range of you, and you must have already been to the location (no more than 25 miles away, or 50 if the messenger flies, per 24 hours of travel) you will send it.<br>
+      <br>The animal messenger will speak up to 25 words to only the creature matching a description you give. If the messenger doesn't arrive at your specified location before the spell ends, the message is lost and the beast will return to where you first found it.<br>
+      <br><b>At Higher Levels:</b> The duration of the spell increases by 48 hours for each slot level above 2nd.</p>
+    </div>
+    
+    <button class="accordion">Blindness/Deafness</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V<br><b>Duration</b>: 1 minute<br></p>
+      <p>A creature you can see becomes blinded or deafened unless they succeed at a Constitution saving throw. At the end of its turns, the creature can make another save. If successful, the spell ends.<br>
+      <br><b>At Higher Levels:</b> You can target one additional creature for each slot level above 2nd.</p>
+    </div>
+        
+    <button class="accordion">Calm Emotions</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Each humanoid in a 20-foot-radius sphere must make a Charisma saving throw. A creature can choose to fail this save. If a creature fails its saving throw, choose one of the following effects:</p>
+      <ul>
+        <li>You can suppress any effect causing them to be charmed or frightened. When this spell ends, any     suppressed effect resumes, provided that its duration has not expired.</li>
+        <li>You can make them indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target takes damage or if it witnesses any of its friends being harmed.</li>
+    </ul>
+    <p>When the spell ends, the creature becomes hostile again, unless the DM rules otherwise.</p>
+    </div>
+        
+    <button class="accordion">Cloud of Daggers</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S, M (glass)<br><b>Duration</b>:Concentration, up to 1 minute<br></p>
+      <p>You fill a 5-foot cube with daggers. A creature takes 4d4 slashing damage when it enters the area for the first time on a turn or starts its turn there.<br>
+      <br><b>At Higher Levels:</b> The damage increases by 2d4 for each slot level above 2nd.</p>
+    </div>
+            
+    <button class="accordion">Crown of Madness</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>: V, S <br><b>Duration</b>:Concentration, up to 1 minute<br></p>
+      <p>A humanoid you can see makes a Wisdom save. If it fails, it becomes charmed by you and must use its action each turn to make a melee attack against a target of your choosing prior to making its movement. It can't target itself. You can choose no target and it will act normally, also doing so if there are no appropriate targets within its reach.<br>
+      <br>You must use your action on every subsequent turn to maintain the spell or it fails. The charmed target may also make another Wisdom save at the end of each of its turns and end the spell on a success.</p>
+    </div>
+            
+    <button class="accordion">Detect Thoughts</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>: V, S, M (copper piece)<br><b>Duration</b>:Concentration, up to 1 minute<br></p>
+      <p>The surface thoughts of any creature within 30 feet are revealed to you. This spell also allows you to detect the presence of thinking creatures you cannot see, and you must, either at the casting of the spell or as an action, detect the creature's presence first, if you cannot see it. The spell works through most barriers except 2 feet of stone, 2 inches of metal, or a thin sheet of lead. This spell does not work on creatures with Intelligence lower than 4 or ones that cannot use language; instead, you will sense nothing.<br>
+      <br>You may also use an action to learn the surface thoughts of another creature, or to go deeper into one whose mind you've already touched. By going deeper, you can learn the target's emotional state, what's important to it in that moment, or the pattern of its logic. if you try to look deeper into a creature's mind, it makes a Wisdom saving throw and the spell ends if it succeeds. The creature will also know that you are there, even if it fails the save, and can make an Intelligence check contested by your own Intelligence check at the end of each of its turns to try and end your probing.<br>
+      <br>If a creature whose thoughts you are reading moves more than 30 feet away from you, you can no longer detect its thoughts.</p>
+    </div>
+           
+    <button class="accordion">Enhance Ability</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (fur or feather) <br><b>Duration</b>:Concentration, up to 1 minute<br></p>
+      <p>A creature you touch gains one of the following effects until the spell ends.</p><br>
+    <ul>
+     <li>Bear's Endurance: The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.</li>
+      <li>Bull's Strength: The target has advantage on Strength checks, and its carrying capacity doubles.</li>
+      <li>Cat's Grace: The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.</li>
+      <li>Eagle's Splendor: The target has advantage on Charisma checks.</li>
+      <li>Fox's Cunning: The target has advantage on Intelligence checks.</li>
+      <li>Owl's Wisdom: The target has advantage on Wisdom checks.</li>
+      </ul>
+      <p><br><b>At Higher Levels:</b> You can target one additional creature for each slot about 2nd.</p>
+    </div> 
+               
+    <button class="accordion">Enthrall</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S <br><b>Duration</b>: 1 minute<br></p>
+      <p>You cause creatures you can see that can hear you to make a Wisdom save. Any creature immune to being charmed is unaffected by this spell. If you or your companions are fighting the target, it has advantage.<br>
+      <br>On a failed save, the target has disadvantage on Perception checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are incapacitated or can no longer speak.</p>
+    </div>
+                   
+    <button class="accordion">Heat Metal</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S, M (Iron, fire) <br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>A creature in contact with a metal object you can see takes 2d8 fire damage. If it's holding or wearing the object, they must pass a Constitution save or drop it. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks. While it's in contact with the object, you can inflict the damage again as a bonus action.<br>
+      <br><b>At Higher Levels:</b> The damage increases by 1d8 for each slot level above 2nd.</p>
+    </div>
+                       
+    <button class="accordion">Hold Person</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S, M (Straight piece of iron) <br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>A humanoid that you can see becomes paralyzed unless they succeed on a Wisdom saving throw. At the end of its turns, it can make another Wisdom save, ending the paralysis on a success.<br>
+      <br><b>At Higher Levels:</b> You can target one additional humanoid, all within 30 feet of each other, for each level above 2nd.</p>
+    </div>
+                           
+    <button class="accordion">Invisibility</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (Eyelash in gum arabic) <br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>A creature you touch and everything it wears or carries becomes invisible. If the target drops an item or removes it, the item is no longer invisible, and if the target tries to attack or cast a spell, the spell ends early.<br>
+      <br><b>At Higher Levels:</b> You can target an additional creature for each slot level above 2nd.</p>
+    </div>
+                              
+    <button class="accordion">Knock</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V<br><b>Duration</b>: Instantaneous<br></p>
+      <p>A loud knock sounds as far as 300 feet away and an object that has been held shut by mundane or magical means becomes unlocked, unstuck, or unbarred. If the object is held shut in more than one way, only one of the ways is undone.<br>
+      <br>If the object was held shut with Arcane Lock, it can be opened and closed normally for 10 minutes before the spell returns.</p>
+    </div>
+                                  
+    <button class="accordion">Lesser Restoration</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You touch a creature and end either one disease or one of the following conditions: blinded, deafened, paralyzed, or poisoned.</p>
+    </div>
+                                      
+    <button class="accordion">Locate Animals or Plants</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Self<br><b>Components</b>: V, S, M (Bloodhound fur)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You sense the direction and distance to the nearest specifically named or described beast or plant within 5 miles.</p>
+    </div>
+                                  
+    <button class="accordion">Locate Object</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>: V, S, M (forked twig)<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>You sense the direction and direction of movement of an object known to you that you describe or name, as long as it is within 1,000 feet of you. An object is considered known to you if you've been within 30 feet of it and seen it.<br>
+      <br>Instead, you can also sense the nearest object that you can describe in a basic way.<br>
+      <br>The spell doesn't work on lead objects or if there is any thickness of lead between you and the object.</p>
+    </div>
+                                    
+    <button class="accordion">Magic Mouth</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute (Ritual)<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S, M (Honeycomb, 10gp jade dust; consumed)<br><b>Duration</b>: Until dispelled<br></p>
+      <p>An object that isn't carried or worn delivers a message you speak to it under circumstances you describe. The message must be 25 words or less and take no longer than 10 minutes to deliver, and the circumstances that trigger the delivery must be visual and/or audible and occur within 30 feet of the object.<br>
+      <br>If the object has no mouth, or anything that resembles a mouth, of its own, a magical mouth appears on the object to deliver the message in the exact voice you gave it.<br>
+      <br>You can choose for the spell to end on its first delivery or to remain indefinitely.</p>
+    </div>
+                                        
+    <button class="accordion">Phantasmal Force</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, S, M (Fleece)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>You fill the mind of a creature you can see with some illusory creature, object, or phenomenon while the spell lasts. Unless the target succeeds at an Intelligence saving throw, it believes the illusion is entirely real; even its senses will verify this and any illogical situations that arise will be rationalised in the illusion's favor.<br>
+      <br>On your turn, the illusion deals 1d6 psychic damage if the target stands in or enters the area within 5 feet of the illusion, including the illusion's space. The damage appears to the target to be caused by some attack or effect that is natural to the illusion. It does not deal damage if it is not of something that would naturally attack or cause a damaging effect if it were real.<br>
+      <br>The target can make an Investigation check on the illusion. If it succeeds, the spell ends.</p>
+    </div>
+                                            
+    <button class="accordion">Pyrotechnics</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Choose a nonmagical flame smaller than a 5-foot cube that you can see. You extinguish the fire and create fireworks or smoke when you do so.</p><br>
+      <ul>
+        <li><b>Fireworks:</b> The fire explodes. Each creature within 10 feet of the fire must pass a Constitution save or be blinded until the end of your next turn.</li>
+        <li><b>Smoke:</b> Thick smoke spreads out in a 20-foot radius, moving around corners. The area is heavily obscured. The smoke lasts for 1 minute or until a strong wind disperses it.</li>
+      </ul>
+    </div>
+                                            
+    <button class="accordion">See Invisibility</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>: V, S, M (Talc, powdered silver)<br><b>Duration</b>: 1 Hour<br></p>
+      <p>You can see into the ethereal plane, where the creatures and objects appear translucent, and invisible creatures and objects become apparent to you.</p>
+    </div>
+                                                
+    <button class="accordion">Shatter</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S, M (Chop of mica)<br><b>Duration</b>: 1 Hour<br></p>
+      <p>Each creature in a 10-foot-radius sphere must make a Constitution save. A creature takes 3d8 thunder damage on a failed save or half as much on a success. A creature of inorganic material has disadvantage on the save.<br>
+      <br>A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.<br>
+      <br><b>At Higher Levels:</b> The damage increases by 1d8 for each slot level above 2nd.</p>
+    </div>
+                                                
+    <button class="accordion">Silence</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: 120 feet<br><b>Components</b>: V, S<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>Within a 20-foot-radius sphere, no sounds can be made or heard. Creatures within the sphere are effectively deafened, cannot cast spells with a verbal component, and are immune to thunder damage.</p>
+    </div>
+                                                    
+    <button class="accordion">Skywrite</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Sight<br><b>Components</b>: V, S<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>While the spell lasts, the clouds take the form of up to 10 words you choose. A strong wind can blow the clouds away early, or they dissipate naturally when the spell ends.</p>
+    </div>
+                                                   
+    <button class="accordion">Suggestion</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: V, M (Snake's tongue, honeycomb/sweet oil)<br><b>Duration</b>: Concentration, up to 8 hours<br></p>
+      <p>You suggest an activity to a creature of your choice that you can see and that can hear and understand you. You're limited to two sentences. Creatures that can't be charmed are immune. The suggestion must be worded to make the action sound reasonable. Asking the creature to do something obviously self-harmful ends the spell.<br>
+      <br>The target makes a Wisdom save. On failure, it performs the action. The action can continue for the entire duration. If the activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.<br>
+      <br>You can also specify conditions that will trigger a special activity during the duration. If the condition isn't met before the spell expires, the activity isn't performed.<br>
+      <br>If you or any of your companions damage the target, the spell ends.</p>
+    </div>
+                                                       
+    <button class="accordion">Warding Wind</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>: V<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>A strong wind encircles you in a 10-foot radius extinguishing unprotected flames torch-sized or smaller, deafening you and any creatures in its area, ranged attacks that pass through are rolled with disadvantage, disperses vapor, gas, and fog that can be affected by a strong wind, and the area becomes difficult terrain for others.</p>
+    </div>
+                                                           
+    <button class="accordion">Zone of Truth</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>: V, S<br><b>Duration</b>: 10 minutes<br></p>
+      <p>A creature that starts its turn in or enters the 15-foot sphere area you designate can no longer outright lie while in the area unless it succeeds on a Charisma saving throw. You are aware of who passes and who fails and the affected creatures are aware of the restriction.</p>
+    </div>
+    
+    
+     <e6>Third Level</e6><br>
+    
+        <button class="accordion">Bestow Curse</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>: V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>A creature you touch must make a Wisdom saving throw or receive one of the following curses:</p>
+    <ul>
+      <li>Disadvantage on ability checks and saves for an ability score of your choice
+      <li>Disadvantage on attacks against you
+      <li>Wastes turns unless it passes a Wisdom save at the start of each turn
+      <li>Takes an extra 1d8 necrotic damage whenever hit by one of your attacks or spells
+    </ul>
+      <p>A DM can rule that another curse of your choosing is acceptable as long as its effect is on a level with the above options.<br>
+      <br>The spell ends early if a Remove Curse spell is cast on the target.<br>
+      <br><b>At Higher Levels:</b> If you cast this spell using a 4th level slot, the possible duration is extended to 10 minutes. If you use a 5th or 6th level slot, the duration is 8 hours. If you use a 7th or 8th level slot, the duration is 24 hours. If you use a 9th level slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration.</p>
+    </div>
+    
+    <button class="accordion">Catnap</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>: S, M (Sand)<br><b>Duration</b>: 10 minutes<br></p>
+      <p>Up to three willing creatures you see of your choice fall unconscious. The spell ends early if a target takes damage or someone uses an action to shake or slap it awake. If a target is unconscious for the full duration, it gains the benefit of a short rest, and it can't be affected by this spell until it finishes a long rest.<br>
+      <br><b>At Higher Levels:</b> You can target one additional willing creature for each slot level above 3rd.</p>
+    </div>
+    
+    <button class="accordion">Clairvoyance</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: 1 mile<br><b>Components</b>: V, S, M (100gp jeweled horn(hearing)/100gp glass eye (seeing))<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>You make an invisible sensor in a location you've visited or seen, or in an obvious location that you haven't. The sensor remains for the duration and can’t be interacted with.<br>
+      <br>Choose seeing or hearing. You can see or hear as if you are where the sensor is. As an action, you can switch which sense.<br>
+      <br>If something can see it, it sees a luminous, intangible, fist-sized orb.</p>
+    </div>
+        
+    <button class="accordion">Dispel Magic</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>: V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Choose one object, creature, or magic effect within range. Any spell of 3rd level or lower on the target ends. If the spell is 4th level or higher, make a check using your spellcasting ability. The DC is 10 + the spell's level. On a success, the spell ends.<br>
+      <br><b>At Higher Levels:</b> You automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.</p>
+    </div>
+            
+    <button class="accordion">Enemies Abound</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>: V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>You force one creature you can see to make an Intelligence save. It automatically succeeds if it's immune to being frightened. On a failure, the target regards all creatures it can see as enemies, allies included. Each time the target takes damage, it can repeat the save, ending the effect on a success.<br>
+      <br>Whenever the creature chooses a target, it must choose at random from among the creatures it can see within range. If an enemy provokes an opportunity attack, the creature must make that attack if it's able to.</p>
+    </div>
+                
+    <button class="accordion">Fear</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self (30ft cone)<br><b>Components</b>: V, S, M (White feather/hen's heart)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Each creature in a 30-foot cone must succeed on a Wisdom save or drop whatever it's holding and become frightened for the duration.<br>
+      <br>An affected creature must take the Dash action and move away from you by the safest route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight on you, it can make a Wisdom save. On a success, the spell ends for it.</p>
+    </div>
+                    
+    <button class="accordion">Feign Death</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action (Ritual)<br><b>Range</b>: Touch<br><b>Components</b>: V, S, M (Graveyard dirt)<br><b>Duration</b>: 1 hour<br></p>
+      <p>You touch a willing creature and for the duration or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells. The target is blinded and incapacitated, and its speed drops to 0. The target has resistance to all damage except psychic. If the target is diseased or poisoned when you cast the spell, or becomes diseased or poisoned while under the spell's effect, it has no effect until the spell ends.</p>
+    </div>
+                    
+    <button class="accordion">Glyph of Warding</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 hour<br><b>Range</b>: Touch <br><b>Components</b>: V, S, M (Incense, 200gp powdered diamond; consumed)<br><b>Duration</b>: Until dispelled/triggered<br></p>
+      <p>You inscribe a glyph either upon a surface or within an object that can be closed to hide it. It can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast the spell, it ends without being triggered. You decide what triggers the glyph when you cast the spell. Once the glyph is triggered, this spell ends.<br>
+      <br>You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics, creature kind, or alignment. You can also set conditions for creatures that don't trigger the glyph.<br>
+      <br>The glyph is nearly invisible and requires a successful Investigation check to be found.<br>
+      <br>When you inscribe the glyph, choose explosive runes or a spell glyph.
+      <ul>
+        <li><b>Explosive Runes:</b> When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere. The sphere spreads around corners. Each creature must make a Dexterity save. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failure (your choice when you create the glyph), or half damage on a success.</li>
+        <li><b>Spell Glyph:</b> You can store a prepared spell of 3rd level or lower by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the triggering creature. If the spell affects an area, the area is centered on that creature. If the spell summons hostile or harmful things, they appear as close as possible to the creature and attack it. If the spell requires concentration, it lasts for the full duration.</li>
+      </ul>
+      <p><b>At Higher Levels:</b> The damage of an explosive rune glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding.</p>
+    </div>
+                        
+    <button class="accordion">Hypnotic Pattern</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>: S, M (Glowing incense/crystal vial of glowing material)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Each creature in a 30-foot cube who can see must make a Wisdom save. On a failure, the creature becomes charmed. While charmed by this spell, the creature is incapacitated and has a speed of 0.<br>
+      <br>The spell ends for a creature if it takes any damage or if someone uses an action to snap it out of the trance.</p>
+    </div>
+                        
+    <button class="accordion">Leomund's Tiny Hut</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute (Ritual)<br><b>Range</b>: Self (10ft radius hemisphere)<br><b>Components</b>:V, S, M (Crystal bead)<br><b>Duration</b>: 8 hours<br></p>
+      <p>A 10-foot-radius dome appears around you and up to nine Medium or smaller creatures in the area. The spell fails if there is a creature larger than Medium or more than nine creatures. The spell ends if you leave its area.<br>
+      <br>The dome is immobile. Until the spell ends, you can make the inside be dimly lit or dark. The outside is opaque of any color you choose, but is transparent on the inside.<br>
+      <br>Creatures and objects in the dome's area when you cast the spell can move through it freely. Everything else is unable to enter. Spells and other magical effects can't pass the barrier of the dome on either end. The dome's atmosphere is always comfortable and dry, no matter the outside weather.</p>
+    </div>
+                            
+    <button class="accordion">Major Image</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>:V, S, M (Fleece)<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+      <p>You create an image no larger than a 20 foot cube. It appears at a spot you can see and lasts for the duration. It seems completely real, sensory effects included. You can't create a sensory effect strong enough to cause damage or a condition.<br>
+      <br>As long as you are within range of the illusion, you can use your action to make the image to move to any other spot within range. As the image changes location, you can alter it so that its movements appear natural for the image.<br>
+      <br>Physical interaction with the image reveals it as an illusion. A creature can use its action to determine that it's an illusion with a successful Investigation check. If a creature learns it's an illusion, it can see through the image, and the other sensory qualities become faint to it.<br>
+      <br><b>At Higher Levels:</b> The spell lasts until dispelled without requiring concentration if cast at 6th-level or higher.</p>
+    </div>
+                                
+    <button class="accordion">Nondetection</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (25gp diamond dust; consumed)<br><b>Duration</b>: 8 hours<br></p>
+      <p>A target you touch can't be targeted by divination magic or seen through scrying. The target can be a creature, place, or object no larger than 10 feet in any dimension.</p>
+    </div>
+                                    
+    <button class="accordion">Plant Growth</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action/8 hours<br><b>Range</b>: 150 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>If you cast this spell using 1 action, all normal plants in a 100-foot radius centered on a point become overgrown. Moving through the area spends 4 feet of movement for every 1 foot moved. You can exclude areas of any size within the spell's area from being affected.<br>
+      <br>If you cast this spell over 8 hours, all plants in a half-mile radius centered on a point yield twice the normal amount of food when harvested for 1 year.</p>
+    </div>
+                                        
+    <button class="accordion">Sending</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Unlimited<br><b>Components</b>:V, S, M (Fine copper wire)<br><b>Duration</b>: 1 round<br></p>
+      <p>You send a message of up to 25 words to a creature you're familiar with. The creature hears the message in its mind, recognizes you if it knows you, and can send an answer immediately. Creatures with Intelligence scores of at least 1 understand the meaning of your message.<br>
+      <br>You can send the message across any distance. If the target is on a different plane than you, there is a 5 percent chance that the message doesn't arrive.</p>
+    </div>
+                                            
+    <button class="accordion">Speak with Dead</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 10 feet<br><b>Components</b>:V, S, M (Burning incense)<br><b>Duration</b>: 10 minutes<br></p>
+      <p>You partially revive a corpse to ask it questions. It resumes death after the duration. The corpse must still have a mouth and can't be undead. A corpse can only be targeted by this spell once every 10 days.<br>
+      <br>You can ask up to five questions. It knows only what it knew in life, including languages. Answers are usually brief, cryptic, or repetitive, and it is under no compulsion to offer a truthful answer. This spell doesn't return the soul to the body, so it can't learn new information, doesn't understand anything that's happened since it died, and can't speculate about the future.</p>
+    </div>
+                                                
+    <button class="accordion">Speak with Plants</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self (30ft radius)<br><b>Components</b>:V, S<br><b>Duration</b>: 10 minutes<br></p>
+      <p>You can question plants in 30 feet of you about events in the spell's area within the past day. You can also turn difficult terrain caused by plant growth into ordinary terrain and vice versa. It lasts for the duration.<br>
+      <br>Plants might be able to perform other tasks on your behalf, at the DM's discretion. The spell doesn't enable plants to uproot themselves, but they can freely move branches, tendrils, and stalks.<br>
+      <br>If a plant creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it.<br>
+      <br>This spell can cause a plants created by Entangle to release a restrained creature.</p>
+    </div>
+                                                    
+    <button class="accordion">Stinking Cloud</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 90 feet<br><b>Components</b>:V, S, M (Rotten egg/skunk cabbage leaves)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>You create a 20-foot-radius sphere of gas centered on a point. The cloud spreads around corners and its area is heavily obscured. It lingers in the air for the duration.<br>
+      <br>Each creature completely in the cloud at the start of its turn must make a Constitution save against poison. On a failure, the creature does nothing that turn. Creatures that don't need to breathe or are immune to poison automatically succeed.<br>
+      <br>A wind of 10mph disperses the cloud after 4 rounds. A wind 20mph disperses it after 1 round.<br></p>
+    </div>
+                                                        
+    <button class="accordion">Tongues</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, M (Clay model of ziggurat)<br><b>Duration</b>: 1 hour<br></p>
+      <p>A creature you touch understands any spoken language it hears. When it speaks, any creature that knows at least one language can hear and understand it.</p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<e6>Fourth Level</e6><br>
+
+
+
+
+    
+    <button class="accordion">Charm Monster</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>:V, S<br><b>Duration</b>: 1 hour<br></p>
+      <p>A creature you can see must make a Wisdom save, and has advantage if you or your companions are fighting it. If it fails, it's charmed by you until the spell ends or until you or your companions harm it. The charmed creature is friendly to you. When the spell ends, the creature knows it was charmed by you.<br>
+      <br><b>At Higher Levels:</b>You can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other.</p>
+    </div>
+    
+    <button class="accordion">Compulsion</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Creatures of your choice that you can see and that can hear you must make a Wisdom save. It automatically succeeds if it can’t be charmed.<br>
+      <br>Until the spell ends, you can use your bonus action to designate a direction horizontal to you. Each target must use its movement to move in that direction on its turn. It can take its action before it moves. After moving, it can make another Wisdom save.<br>
+      <br>A target isn't compelled to move into a deadly hazard, but is willing to provoke opportunity attacks.</p>
+    </div>
+    
+    <button class="accordion">Confusion</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 90 feet<br><b>Components</b>:V, S, M (3 nut shells)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Each creature in a 10-foot-radius sphere makes a Wisdom save. On a success, nothing happens. On a failure, the target can't take reactions and must roll a d10 at the start of each of its turns. This determines its action that turn. At the end its turn, it can make a Wisdom save. If it succeeds, the spell ends.<br>
+      <br><b>1</b>= Takes no action and uses all movement to go in a random direction. Assign a direction to each number of a d8 and roll it-- this determines the direction.<br>
+      <br><b>2-6</b>= Doesn't more or take actions.<br>
+      <br><b>7/8</b>= Makes a melee attack against a random creature in reach. If there's none, it does nothing.<br>
+      <br><b>9/10</b>= Can act and move normally
+      <br><b>At Higher Levels:</b>The radius of the sphere increases by 5 feet for each slot level above 4th.</p>
+    </div>
+        
+    <button class="accordion">Dimension Door</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 500 feet<br><b>Components</b>:V<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You teleport yourself to any spot in range. You arrive at exactly the spot desired. It can be a place you can see or visualize, or one you can describe by stating distance and direction.<br>
+      <br>You can bring objects along if their weight doesn't exceed your carrying capacity. You can also bring one willing creature your size or smaller who isn't over its capacity. It must be within 5 feet of you.<br>
+      <br>If you would arrive in an occupied space, everyone teleporting takes 4d6 force damage, and the spell fails.</p>
+    </div>
+            
+    <button class="accordion">Freedom of Movement</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (Leather strap bound to appendage)<br><b>Duration</b>: 1 hour<br></p>
+      <p>Touch a willing creature. Its movement is unaffected by difficult terrain, and spells and magical effects can't reduce its speed or cause it to be paralyzed or restrained.<br>
+      <br>The target can spend 5 feet of movement to automatically escape from nonmagical restraints. Additionally, being underwater imposes no penalties on its movement or attacks.<br>
+    </div>
+                
+    <button class="accordion">Greater Invisibility</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>A creature you touch becomes invisible. Anything it's wearing or carrying is invisible as long as it's on its person.<br>
+    </div>
+                    
+    <button class="accordion">Hallucinatory Terrain</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: 300 feet<br><b>Components</b>:V, S, M (Stone, twig, green plant)<br><b>Duration</b>: 24 hours<br></p>
+      <p>You make natural terrain in a 150-foot cube in range look, sound, and smell like some other natural terrain. Manufactured structures, equipment, and creatures within the area aren't changed in appearance.<br>
+      <br>The base terrain is unchanged, so anyone entering the area can see through the illusion. If the difference isn't obvious by touch, a creature can attempt an Investigation check. A creature who learns it's an illusion sees it as a vague image over the terrain.</p>
+    </div>
+                        
+    <button class="accordion">Locate Creature</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (Bloodhound fur)<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>Describe or name a creature familiar to you. You sense the direction to the creature's location, as long as its within 1000 feet of you. If the creature is in motion, you know the direction of its movement. The spell can locate a specific creature known to you or the nearest of a specific kind, as long as you have seen it while within 30 feet of it. If the creature is in a different form, the spell doesn't work. This spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.</p>
+    </div>
+                            
+    <button class="accordion">Polymorph</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S, M (Caterpillar cocoon)<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>You transform a creature that you can see into another form. An unwilling creature must make a Wisdom save to avoid it. The spell has no effect on a shapechanger or a creature with 0 hit points.<br>
+      <br>The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose CR is equal or less than the target's. If it doesn't have a CR, use level. The target's statistics are replaced by the statistics of the chosen beast. It retains its alignment and personality.<br>
+      <br>The target takes the hit points of its new form. When it reverts to its normal form, it gets its original hit points back. If it reverts because it dropped to 0 hit points, excess damage carries over to its normal form. If the excess damage doesn't reduce its normal form to 0 hit points, it isn't knocked unconscious.<br>
+      <br>The creature is limited to the actions of its new form, and it can't take any action that requires hands or speech. Its gear melds into the new form and it can't benefit from any of its equipment.</p>
+    </div>
+    
+    <e6>Fifth Level</e6><br>
+    
+    <button class="accordion">Animate Objects</button>
+    <div class="panel">
+    <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+    <p>Choose up to ten nonmagical objects that are not being worn or carried. A Medium target counts as two objects, a Large counts as four, and a Huge counts as eight. You can't animate an object larger than Huge. Each target becomes a creature under your control until the spell ends or it's reduced to 0 hit points.<br>
+    <br>As a bonus action, you can mentally command a creatures if it's within 500 feet of you. You can command multiple at the same time if the command is the same. You decide what action and movement the creature will take during its next turn, or issue a general command. If you issue no commands, it just defends itself against hostile creatures. Once given an order, the creature continues to follow it until it's complete.</p>
+    <table style= width:50%>
+    <tr>
+    <th>Size</th>
+    <th>HP</th>
+    <th>AC</th>
+    <th>Attack</th>
+    <th>Strength</th>
+    <th>Dexterity</th>
+    </tr>
+    <tr>
+    <td>Tiny</td>
+    <td>20</td>
+    <td>18</td>
+    <td>+8 to hit, 1d4+4 damage</td>
+    <td>4</td>
+    <td>18</td>
+    </tr>
+    <tr>
+    <td>Small</td>
+    <td>25</td>
+    <td>16</td>
+    <td>+6 to hit, 1d8+2 damage</td>
+    <td>6</td>
+    <td>14</td>
+    </tr>
+    <tr>
+    <td>Meduim</td>
+    <td>40</td>
+    <td>13</td>
+    <td>+5 to hit, 2d6+1 damage</td>
+    <td>10</td>
+    <td>12</td>
+    </tr>
+    <tr>
+    <td>Large</td>
+    <td>50</td>
+    <td>10</td>
+    <td>+6 to hit, 2d10+2 damage</td>
+    <td>14</td>
+    <td>10</td>
+    </tr>
+    <tr>
+    <td>Huge</td>
+    <td>80</td>
+    <td>10</td>
+    <td>+8 to hit, 2d12+4 damage</td>
+    <td>18</td>
+    <td>6</td>
+    </tr>
+    </table>
+    <p>An animated object is a construct with some stats determined by its size. Its Constitution is 10, its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet. If it can't walk, it has a flying speed of 30 feet and hovers. If the object is securely attached to something, its speed is 0. It has blindsight with a radius of 30 feet. When the object drops to 0 hit points, it reverts to its original form, and remaining damage carries over.<br>
+    <br>It can make a single melee attack against a creature within 5 feet of it. The attack is determined by its size and deals bludgeoning damage. The DM can rule that it inflicts slashing or piercing damage based on its form.<br>
+    <br><b>At Higher Levels:</b> You can animate two additional objects for each slot level above 5th.</p>
+    </div> 
+    
+    <button class="accordion">Awaken</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 8 hours<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (1000gp agate; consumed)<br><b>Duration</b>: Insantaneous<br></p>
+      <p>Touch a Huge or smaller beast or plant. The target must have an Intelligence of 3 or less. The target gains an Intelligence of 10. It also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move itself and gains senses similar to a human's. Your DM chooses the plant's statistics.<br>
+      <br>The target is charmed by you for 30 days, or until you or your companions do anything harmful to it. When the charm ends, the target chooses whether to remain friendly to you based on how you treated it.<br></p>
+    </div>
+        
+    <button class="accordion">Dominate Person</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>A humanoid you see must pass a Wisdom save or be charmed. If you're fighting it, it has advantage.<br>
+      <br>While charmed, you have a telepathic link to it if you're on the same plane. You can use this link to issue commands it obeys, no action required. You can specify a simple and general course of action. If it completes the order and doesn't receive further orders, it only defends itself.<br>
+      <br>You can use your action to take total control of the target. Until the end of your next turn, the creature takes only the actions you decide and nothing you don't allow it to. You can also have the creature use a reaction, but this takes your reaction as well.<br>
+      <br>If the target takes damage, it makes another Wisdom save. On a success, the spell ends.<br>
+      <br><b>At Higher Levels:</b>When you cast this spell using a 6th-level slot, the duration is up to 10 minutes. At a 7th-level slot, the duration is up to 1 hour. At a slot of 8th or higher, the duration is up to 8 hours.</p>
+    </div>
+            
+    <button class="accordion">Dream</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: Special<br><b>Components</b>:V, S, M (Sand, ink, writing quill)<br><b>Duration</b>: 8 hours<br></p>
+      <p>Choose a creature on the same plane of existence known to you. Creatures that don't sleep are immune. You or a willing creature you touch enters a trance state, acting as a messenger. While in the trance, it's aware of its surroundings, but can't take actions or move.<br>
+      <br>If the target is asleep, the messenger appears in its dreams and can converse with it as long as it remains asleep. The messenger can also shape the dream's environment. The messenger can emerge from the trance at any time, ending the spell early. The target recalls the dream perfectly upon waking. If the target is awake when you cast the spell, the messenger knows it, and can end the trance or wait for the target to fall asleep.<br>
+      <br>You can make the messenger appear terrifying to the target. If you do, the messenger can deliver a message of up to ten words and the target must make a Wisdom save. On a failure, the target gains no benefit from that rest. In addition, when the target wakes up, it takes 3d6 psychic damage.<br>
+      <br>If you have a small portion of the target's body, it makes its saving throw with disadvantage.</p>
+    </div>
+                
+    <button class="accordion">Geas</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: 60 feet<br><b>Components</b>:V<br><b>Duration</b>: 30 days<br></p>
+      <p>You place a command on a creature that you can see, forcing it to do or refrain from doing some action or activity you decide. The command can be anything except something that would obviously cause the target to die.<br>
+      <br>If the creature can't understand you, this spell has no effect. If it can understand you, it must succeed a Wisdom save or become charmed by you. While the creature is charmed, it takes 5d10 psychic damage each time it does something that directly counters to your instructions, but no more than once each day.<br>
+      <br>You can end the spell early by using an action to dismiss it. A Remove Curse, Greater Restoration, or Wish spell also ends it.<br>
+      <br><b>At Higher Levels:</b> When you cast this using a 7th or 8th level spell slot, the duration is 1 year. If you use a 9th level slot, the spell lasts until it is ended by one of the spells mentioned above.</p>
+    </div>
+                    
+    <button class="accordion">Greater Restoration</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (100gp diamond dust; consumed)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Touch a creature. You can reduce its exhaustion level by one, or end one of the following effects on it:</p>
+      <ul>
+        <li>One effect that charmed of petrified it.</li>
+        <li>One curse or attunment to a cursed item.</li>
+        <li>Any reduction to one ability score</li>
+        <li>One effect reducing hit point maximum.</li>
+      </ul>
+    </div>
+                    
+    <button class="accordion">Hold Monster</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 90 feet<br><b>Components</b>:V, S, M (straight piece of iron)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>Choose a creature you can see. It must pass a Wisdom save or be paralyzed. This spell has no effect on undead. At the end of the target's turns, it can make another save, ending the paralysis on a success.<br>
+      <br><b>At Higher Levels:</b> You can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them.</p>
+    </div>
+                      
+    <button class="accordion">Legend Lore</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (250gp incense, 4 50gp ivory strips)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Name or describe a person, place, or object. The spell gives you a summary of significant lore about it. If the thing you named isn't of legendary importance, you gain no information. The more information you already have, the more detailed the information you receive is.</p>
+    </div>
+                        
+    <button class="accordion">Misled</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>:S<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>You become invisible, and an illusionary double appears in your space. The invisibility ends if you attack or cast a spell, but the double will persist. You can use an action to move the illusion up to twice your speed and behave in whatever manner you choose.<br>
+      <br>Using a bonus action, you can see and hear through the double as if you are where it is. You are blinded and deafened to your body's surroundings. You can switch back to your own senses using a bonus action.</p>
+    </div>
+                        
+    <button class="accordion">Modify Memory</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>A creature you can see must make a Wisdom save. If you're fighting it, it has advantage. If it fails, it becomes charmed, is incapacitated, and is unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this spell ends, and none of its memories are modified.<br>
+      <br>While the charm lasts, you can affect the target's memory of an event it experienced in the last 24 hours that lasted up to 10 minutes. You can erase all memory of it, allow the target to recall it with perfect detail, change the details of it, or create a memory of some other event.<br>
+      <br>You must describe to the target how its memories are changed, and it must be able to understand your language. Its mind fills in gaps in your description. If the spell ends before you've finished describing the new memories, the creature is unaffected. Otherwise, the memories take hold when the spell ends.<br>
+      <br>A Remove Curse or Greater Restoration restores the creature's true memory.<br>
+      <br><b>At Higher Levels:</b> You can alter the target's memories of an event that took place up to 7 days ago (6th level), 30 days ago (7th level), 1 year ago (8th level), or any time (9th level).</p>
+    </div>
+                            
+    <button class="accordion">Planar Binding</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 hour<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S, M (1000gp jewel; consumed)<br><b>Duration</b>: 24 hours<br></p>
+      <p>You attempt to bind a celestial, elemental, fey, or fiend to your service. It must be within range for the entire casting of the spell. At completion, it makes a Charisma save. If it fails, it's bound to serve you for the duration. If the creature was brought by another spell, its duration is extended.<br>
+      <br>A bound creature must follow your instructions to the best of its ability. It obeys the letter of your instructions, but if it's hostile, it may twist your words to achieve its own goals. If the creature carries out your instructions completely before the spell ends, it reports this to you if you're on the same plane of existence. If you're not, it returns to where you bound it and remains there until the spell ends.<br>
+      <br><b>At Higher Levels:</b> When you cast this spell using a 6th-level slot, the duration increases to 10 days. With a 7th-level slot, 30 days. With an 8th-level slot, 180 days. At 9th-level, a year and a day.</p>
+    </div>
+                                
+    <button class="accordion">Raise Dead</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 hour<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (500gp diamond; consumed)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Touch a creature dead for no longer than 10 days. If its soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point. This spell has no effect on undead.<br>
+      <br>This spell neutralizes poisons and cures nonmagical diseases. This spell doesn't remove magical effects. If they aren't removed prior to casting, they return when the creature comes back to life.<br>
+      <br>This spell closes all mortal wounds, but doesn't restore missing body parts. If the creature doesn't have body parts or organs necessary for survival, the spell fails.<br>
+      <br>Coming back from the dead is an ordeal. The target takes a -4 penalty to all attacks, saves, and ability checks. Every time it finishes a long rest, the penalty is reduced by 1 until it disappears.</p>
+    </div>
+    
+        <button class="accordion">Scrying</button>
+    <div class="panel">
+    <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (1000gp focus)<br><b>Duration</b>: Concentration, up to 10 minutes<br></p>
+    <p>You can see and hear a creature you choose that's on the same plane as you. The target must make a Wisdom save, modified by how well you know it and the sort of physical connection you have. If it knows you're casting this spell, it can fail the save voluntarily.<br>
+    <table style= width:50%>
+    <tr>
+    <th>Knowledge</th>
+    <th>Save Modifier</th>
+    </tr>
+    <tr>
+    <td>You've heard of the target</td>
+    <td>+5</td>
+    </tr>
+    <tr>
+    <td>You've met the target</td>
+    <td>+0</td>
+    </tr>
+    <tr>
+    <td>You know the target well</td>
+    <td>-5</td>
+    </table>
+    <table style= width:50%>
+    <tr>
+    <th>Conncetion</th>
+    <th>Save Modifier</th>
+    </tr>
+    <tr>
+    <td>Likeness or picture</td>
+    <td>-2</td>
+    </tr>
+    <tr>
+    <td>Possession or garment</td>
+    <td>-4</td>
+    </tr>
+    <tr>
+    <td>Part of body</td>
+    <td>-10</td>
+    </tr>
+    </table>
+    <p>On a successful save, the target isn't affected, and you can't use this spell on it again for 24 hours. On a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if it were there. The sensor moves with the target. A creature that can see invisible objects sees it as a luminous fist-sized orb.<br>
+    <br>Instead of targeting a creature, you can choose a location you've seen before. When you do, the sensor appears at that location and doesn't move.</p>
+    </div> 
+    
+    <button class="accordion">Seeming</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>:V, S<br><b>Duration</b>: 8 hours<br></p>
+      <p>You make any amount of creatures you can see look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same limb arrangement. Otherwise, the extent of the illusion is up to you. If a creature is unwilling, it must pass a Charisma save to be unaffected.<br>
+      <br>If someone attempts to touch you or any disguised person, they will be able to pass through the illusion. Otherwise, to discern that you are disguised, a creature can use its action to make an Investigation check against your spell save DC.</p>
+    </div>
+        
+    <button class="accordion">Skill Empowerment</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>Touch a willing creature and choose a skill that the target is proficient in and doesn't already have an effect that doubles its bonus. Until the spell ends, it doubles its proficiency bonus for checks that use the skill.</p>
+    </div>
+        
+    <button class="accordion">Synaptic Static</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Each creature in a 20-foot-radius sphere makes an Intelligence save. A creature with an Intelligence score of 2 or lower is immune. A target takes 8d6 psychic damage on a failed save, or half as much on a success.<br>
+      <br>On a failed save, for one minute it rolls a d6 and subtracts the number from all its attacks, ability checks, and concentration saves. It can repeat the save at the end of its turns.</p>
+    </div>
+            
+    <button class="accordion">Teleportation Circle</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: 10 feet<br><b>Components</b>:V, M (Chalks, inks infused with 50gp gems; consumed)<br><b>Duration</b>: 1 round<br></p>
+      <p>You draw a 10-foot-diameter circle on the ground that links your location to a permanent teleportation circle whose sigil sequence you know and that is on the same plane of existence. A portal opens in the circle and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination or in the nearest unoccupied space.<br>
+      <br>When you first learn this spell, you learn the sigil sequences for two destinations on the material plane, chosen by the DM. You can learn additional sequences by studying it for 1 minute.<br>
+      <br>You can create a permanent teleportation circle by casting this spell in the same location every day for one year. You don't need to use the circle for it to become permanent.</p>
+    </div>
+    
+  <e6>Sixth Level</e6><br>
+    
+    <button class="accordion">Eyebite</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>:V, S<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>A creature you can see within 60 feet of you must pass a Wisdom save or be affected by one of the following effects of your choice. On each of your turns, you can use your action to target another creature, but can't target a creature that has succeeded on a save against this casting.</p>
+      <ul>
+        <li><b>Asleep:</b>The target falls unconscious. It wakes up if it takes any damage, or if another creature uses its action to shake it awake.</li>
+        <li><b>Panicked:</b> The target is frightened of you. On each of its turns, it must take the Dash action and move away from you by the safest and shortest route, unless there's nowhere to move. If the target moves to a place at least 60 feet away from you and it can no longer see you, this effect ends.</li>
+        <li><b>Sickened:</b> The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom save. If it succeeds, the effect ends.</li>
+      </ul>
+    </div>
+    
+    <button class="accordion">Find the Path</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: Self<br><b>Components</b>:V, S, M (100gp divination tools, object from destination)<br><b>Duration</b>: Concentration, up to 1 day<br></p>
+      <p>This spell finds you the shortest, most direct route to a location you are familiar with. If you name a destination on another plane of existence, a destination that moves, or a destination that isn't specific, the spell fails.<br>
+      <br>For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. Whenever you are presented with a choice of paths along the way, you automatically determine which path is the most direct route to the destination.</p>
+    </div>
+    
+    <button class="accordion">Guards and Wards</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (Incence, brimstone, oil, knotted string, umber hulk blood, 10gp silver rod)<br><b>Duration</b>: 24 hours<br></p>
+      <p>You create a ward that protects 2,500 square feet of ground. This area can be a 50 feet square, one hundred 5-foot squares, or twenty-five 10-foot squares. The area can be up to 20 feet tall and shaped how you want. You can ward several stories of a building, dividing the area among them, as long as you can walk into each area while you're casting the spell.<br>
+      <br>When you cast this spell, you can specify individuals to be immune to the effects of the spell. You can also specify a password that, when spoken, also provides immunity.<br>
+      <br>The available options are as follows:</p>
+      <ul>
+        <li><b>Corridors:</b> Fog makes the corridors heavily obscured. At each intersection, there is a 50% chance a creature will believe it's going in the opposite direction it chose. You are immune to this chance.</li>
+        <li><b>Doors:</b> All doors are magically locked as if by Arcane Lock. You can also hide up to ten doors with a Minor Illusion-like cover to make them appear as sections of the wall.</li>
+        <li><b>Stairs:</b>  The stairs are filled with a Web. If burned or torn, the strands regrow in 10 minutes.</li>
+        <li><b>Other Effects:</b><br>
+        <br>Dancing Lights in four corridors. You can designate a simple program that the lights repeat.<br>
+        <br>Magic Mouth in two locations.<br>
+        <br>Stinking Cloud in two locations. The vapors return within 10 minutes if dispersed by wind.<br>
+        <br>Constant Gust of Wind in one corridor or room.<br>
+        <br>Suggestion in one location. Any creature that enters or passes through a 5-foot area you choose receives the suggestion mentally.</li>
+      </ul>
+      <p>The whole area radiates magic. Dispel Magic, if successful, removes only one effect.<br>
+      <br>If you cast this spell in the same place every day for one year, the effects become permanent.</p>
+    </div>
+        
+    <button class="accordion">Mass Suggestion</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, M (Snake tongue, honeycomb/sweet oil)<br><b>Duration</b>: 24 hours<br></p>
+      <p>You suggest an activity up to twelve creatures of your choice that you can see and that can hear and understand you. You're limited to two sentences. Creatures that can't be charmed are immune. The suggestion must be worded to make the action sound reasonable. Asking the creature to do something obviously self-harmful ends the spell.<br>
+      <br>Each target makes a Wisdom save. On failure, it performs the action. The action can continue for the entire duration. If the activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.<br>
+      <br>You can also specify conditions that will trigger a special activity during the duration. If the condition isn't met before the spell expires, the activity isn't performed. If you or any of your companions damage a creature affected by this spell, the spell ends for that creature.<br>
+      <br><b>At Higher Levels:</b> When you cast this spell using a 7th-level spell slot, the duration is 10 days. At 8th level, it's 30 days. At 9th level spell slot, it's a year and a day.</p>
+    </div>
+            
+    <button class="accordion">Otto's Irresistible Dance</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>:V<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>You choose a creature you can see and force it to start dancing in its space. Creatures immune to being charmed are unaffected.<br>
+      <br>The target is unable to leave its space and uses all its movement to continue the dance. It has disadvantage on Dexterity saves and attacks. Additionally, other creatures have advantage on attacks against it. The target can use its action to make a Wisdom save, ending the spell on a pass.</p>
+    </div>
+            
+    <button class="accordion">Programmed Illusion</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>:V, S, M (a bit of fleece and jade dust worth at least 25 gp)<br><b>Duration</b>: Until dispelled<br></p>
+      <p>You create an illusion of an object, a creature, or some other visible phenomenon within range that activates when a specific condition occurs. The illusion is imperceptible until then. It must be no larger than a 30-foot cube, and you decide when you cast the spell how the illusion behaves and what sounds it makes. This scripted performance can last up to 5 minutes.<br>
+      <br>When the condition you specify occurs, the illusion springs into existence and performs in the manner you described. Once the illusion finishes performing, it disappears and remains dormant for 10 minutes. After this time, the illusion can be activated again.<br>
+      <br>The triggering condition can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the area. For example, you could create an illusion of yourself to appear and warn off others who attempt to open a trapped door, or you could set the illusion to trigger only when a creature says the correct word or phrase.<br>
+      <br>Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.</p>
+    </div>
+                
+    <button class="accordion">True Seeing</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (25gp eye ointment of mushroom powder, saffron, and fat; consumed)<br><b>Duration</b>: 1 hour<br></p>
+      <p>For the duration, the target has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all with range of 120 feet.</p>
+    </div>
+    
+   <e6>Seventh Level</e6><br> 
+    
+    <button class="accordion">Etherealness</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>:V, S<br><b>Duration</b>: Up to 8 hours<br></p>
+      <p>You step into the Border Ethereal for the duration or until you use your action to dismiss the spell. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. You can see and hear the plane you came from, but everything looks gray and you can't see more than 60 feet.<br>
+      <br>While on the Ethereal Plane, you can only interact with other creatures on that plane. Creatures not on the Ethereal Plane can't perceive or interact with you, unless a special ability has given them the ability to.<br>
+      <br>You ignore all objects and effects that aren't on the Ethereal Plane.<br>
+      <br>When the spell ends, you immediately return to the plane you came from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are moved to the nearest unoccupied space and take force damage equal to twice the feet you are moved.<br>
+      <br>This spell has no effect if you cast it while you are on the Ethereal Plane or a plane that doesn't border it.<br>
+      <br><b>At Higher Levels:</b> You can target up to three willing creatures for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell.</p>
+    </div>
+        
+    <button class="accordion">Forcecage</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 100 feet<br><b>Components</b>:V, S, M (ruby dust worth 1,500 gp)<br><b>Duration</b>: 1 hour<br></p>
+      <p>An immobile, invisible, cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box, as you choose.<br>
+      <br>A prison in the shape of a cage can be up to 20 feet on a side and is made from 1/2-inch diameter bars spaced 1/2 inch apart.<br>
+      <br>A prison in the shape of a box can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out from the area.<br>
+      <br>When you cast the spell, any creature that is completely inside the cage’s area is trapped. Creatures only partially within the area, or those too large to fit inside the area, are pushed away from the center of the area until they are completely outside the area.<br>
+      <br>A creature inside the cage can’t leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a Charisma saving throw. On a success, the creature can use that magic to exit the cage. On a failure, the creature can’t exit the cage and wastes the use of the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel.<br>
+      <br>This spell can’t be dispelled by dispel magic.</p>
+    </div>
+            
+    <button class="accordion">Mirage Arcane</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 10 minutes<br><b>Range</b>: Sight<br><b>Components</b>:V, S<br><b>Duration</b>: 10 days<br></p>
+      <p>You make terrain in an area up to 1 mile square look, sound, smell and even feel like some other sort of terrain. The terrain's general shape remains the same, however, open fields or a road could be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy Meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road.<br>
+      <br>Similarly, you can alter the appearance of structures, or add them where none are present. The spell doesn't disguise, conceal, or add creatures.<br>
+      <br>The illusions include audible, visual, tactile, and olfactory elements, so it can turn clear ground into difficult terrain (or vice versa) or otherwise impede movement through the area. Any piece of the illusory terrain (such as a rock or stick) that is removed from the spell's area disappears immediately.<br>
+      <br>Creatures with truesight can see through the illusion to the terrain's true form; however, all other elements of the illusion remain, so while the creature is aware of the illusion's presence, the creature can still physically interact with the illusion.</p>
+    </div>
+                
+    <button class="accordion">Mordenkainen's Magnificent Mansion</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: 300 feet<br><b>Components</b>:V, S, M (a miniature portal carved from ivory, a small piece of polished marble, and a tiny silver spoon, each item worth at least 5 gp)<br><b>Duration</b>: 24 hours<br></p>
+      <p>You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the spell can enter the extradimensional dwelling as long as the portal remains open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible.<br>
+      <br>Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm.<br>
+      <br>You can create any floor plan you like, but the space can’t exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a ninecourse banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can’t attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can’t leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.</p>
+    </div>
+                    
+    <button class="accordion">Mordenkainen's Sword</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S, M (a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp)<br><b>Duration</b>: Concentration, up to 1 minute<br></p>
+      <p>You create a sword-shaped plane of force that hovers within range. It lasts for the duration. When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit. the target takes 3d10 force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one.</p>
+    </div>
+                    
+    <button class="accordion">Project Image</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 500 miles<br><b>Components</b>:V, S, M (a small replica of you made from materials worth at least 5 gp)<br><b>Duration</b>: Concentration, up to 1 day<br></p>
+      <p>You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within range that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you but is intangible. If the illusion takes any damage, it disappears, and the spell ends.<br>
+      <br>You can use your action to move this illusion up to twice your speed, and make it gesture, speak, and behave in whatever way you choose. It mimics your mannerisms perfectly.<br>
+      <br>You can see through its eyes and hear through its ears as if you were in its space. On your turn as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings.<br>
+      <br>Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.</p>
+    </div>
+                        
+    <button class="accordion">Regenerate</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (Prayer wheel, holy water)<br><b>Duration</b>: 1 hour<br></p>
+      <p>You touch a creature. It regains 4d8+15 hit points. For the duration of the spell, the target regains 1 hit point at the start of its turns.<br>
+      <br>Any severed body parts are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell immediately reattaches it.</p>
+    </div>
+                            
+    <button class="accordion">Resurrection</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 hour<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (1000gp diamond; consumed)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You touch a creature that has been dead for no more than a century, didn't die of old age, and isn't undead. If its soul is willing, the target returns to life with all its hit points.<br>
+      <br>This spell neutralizes any poisons and cures normal diseases. It doesn't, however, remove magical diseases, curses, and the like. This spell closes all mortal wounds and restores any missing body parts.<br>
+      <br>Coming back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.<br>
+      <br>If you use this spell on a creature that has been dead for one year or longer, you can't cast spells, and have disadvantage on all attacks, ability checks, and saves until you finish a long rest.</p>
+    </div>
+    
+    <button class="accordion">Symbol</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (Mercury, phosphorus, 1000gp powdered diamond and opal; consumed)<br><b>Duration</b>: Until dispelled/triggered<br></p>
+      <p>You inscribe a glyph either upon a surface or within an object that can be closed to hide it. It can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast the spell, it ends without being triggered. You decide what triggers the glyph when you cast the spell. Once the glyph is triggered, this spell ends.<br>
+      <br>You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics, creature kind, or alignment. You can also set conditions for creatures that don't trigger the glyph.<br>
+      <br>The glyph is nearly invisible and requires a successful Investigation check to be found.<br>
+      <br>When you inscribe the glyph, choose one of the options below. Once triggered, the glyph glows a 60-foot-radius dim light sphere for 10 minutes, after which the spell ends. Each creature in the sphere when the glyph activates, and any creature that enters the sphere or ends its turn there, is affected.</p>
+      <ul>
+        <li><b>Death:</b> Each target must make a Constitution save, taking 10d10 necrotic damage on a failed save, or half on a success.</li>
+        <li><b>Discord:</b> Each target must make a Constitution save. On a failed save, a target is incapable of meaningful communication and has disadvantage on attack rolls and ability checks for 1 minute.</li>
+        <li><b>Fear:</b> Each target must pass a Wisdom saving throw or become frightened for 1 minute. While frightened, the target drops whatever it's holding and moves at least 30 feet away from the glyph on each of its turns.</li>
+        <li><b>Hopelessness:</b> Each target must make a Charisma save. On a failed save, the target can't attack or target any creature with harmful abilities, spells, or other magical effects for 1 minute.</li>
+        <li><b>Insanity:</b> Each target must make an Intelligence save. On a failed save, the target can't take actions, can't understand what others say, can't read, speaks gibberish, and has erratic movement for 1 minute.</li>
+        <li><b>Pain:</b> Each target must pass a Constitution save or incapacitated for 1 minute.</li>
+        <li><b>Sleep:</b> Each target must pass a Wisdom saving throw or fall unconscious for 10 minutes. A creature awakens if it takes damage or if someone uses an action to wake it up.</li>
+        <li><b>Stunning:</b> Each target must pass a Wisdom saving throw or become stunned for 1 minute.</li>
+      </ul>
+    </div>
+    
+    <button class="accordion">Teleport</button>
+    <div class="panel">
+    <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 10 feet<br><b>Components</b>:V<br><b>Duration</b>: Instantaneous<br></p>
+    <p>You and up to eight willing creatures you can see, or a single object you can see, teleport to a destination you choose. If you pick an object, it must be able to fit completely inside a 10-foot cube, and it can't be held or carried by a creature unwilling to let it teleport.<br>
+    <br>The destination must be a place you know and is on the same plane of existence. Roll a d100 to determine how successfully you get there, based on how well you know the place.</p>
+    <table style= width:50%>
+    <tr>
+    <th>Familiarity</th>
+    <th>Mishap</th>
+    <th>Similar Area</th>
+    <th>Off Target</th>
+    <th>On Target</th>
+    </tr>
+    <tr>
+    <td>Permanent circle</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>1-100</td>
+    </tr>
+    <tr>
+    <td>Associated object</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>1-100</td>
+    </tr>
+    <tr>
+    <td>Very familiar</td>
+    <td>1-5</td>
+    <td>6-13</td>
+    <td>14-24</td>
+    <td>25-100</td>
+    </tr>
+    <tr>
+    <td>Seen casually</td>
+    <td>1-33</td>
+    <td>34-43</td>
+    <td>44-53</td>
+    <td>54-100</td>
+    </tr>
+    <tr>
+    <td>Viewed once</td>
+    <td>1-43</td>
+    <td>44-53</td>
+    <td>54-73</td>
+    <td>74-100</td>
+    </tr>
+    <tr>
+    <td>Description</td>
+    <td>1-43</td>
+    <td>44-53</td>
+    <td>54-73</td>
+    <td>74-100</td>
+    </tr>
+    <tr>
+    <td>False destination</td>
+    <td>1-50</td>
+    <td>50-100</td>
+    <td></td>
+    <td></td>
+    </tr>
+    </table>
+    <p>Familiarity:</p>
+    <ul>
+      <li>Permanent circle refers to a permanent teleportation circle you know.</li>
+      <li>Associated object means you have an item from the destination, taken in the last 6 months.</li>
+      <li>Very familiar is a place you've been to often, studied a lot, or a place you can see at casting.</li>
+      <li>Seen casually is some place you've seen more than once.</li>
+      <li>Viewed once is a place you've seen once.</li>
+      <li>Description is a place that you only know through words, not first-hand experience.</li>
+      <li>False destination is a place that doesn't exist. If you're teleporting to a familiar place that no longer exists, it would be rolled as a false destination.</li>
+    </ul>
+    <p>Results:</p>
+    <ul>
+      <li>On target means you appear where you meant to.</li>
+      <li>Off target means you appear at a d10 x d10 percent of the distance that was traveled away from the destination. The direction is random, determined by a d8. 1 is north, and each number's direction progresses clockwise.</li>
+      <li>Similar area means you appear in a different area that's visually or thematically similar to the destination.</li>
+      <li>Mishap means everything being teleported takes 3d10 force damage and the d100 is rolled again. Multiple mishaps can occur and deal damage each time.</li>
+    </ul>
+    </div> 
+    
+   <e6>Eighth Level</e6><br> 
+    
+                              
+    <button class="accordion">Dominate Monster</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V, S<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>A creature you see must pass a Wisdom save or be charmed. If you're fighting it, it has advantage.<br>
+      <br>While charmed, you have a telepathic link to it if you're on the same plane. You can use this link to issue commands it obeys, no action required. You can specify a simple and general course of action. If it completes the order and doesn't receive further orders, it only defends itself.<br>
+      <br>You can use your action to take total control of the target. Until the end of your next turn, the creature takes only the actions you decide and nothing you don't allow it to. You can also have the creature use a reaction, but this takes your reaction as well.<br>
+      <br>If the target takes damage, it makes another Wisdom save. On a success, the spell ends.<br>
+      <br><b>At Higher Levels:</b> If you use a 9th-level spell slot, the duration is extended to up to 8 hours.</p>
+    </div>
+                                  
+    <button class="accordion">Feeblemind</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 150 feet<br><b>Components</b>:V, S, M (Clay/crystal/glass/mineral spheres)<br><b>Duration</b>: Instantaneous<br></p>
+      <p>A creature you can see takes 4d6 psychic damage and makes an Intelligence save. On failure, its Intelligence and Charisma become 1. It can't cast spells, activate magic items, understand language, or communicate legibly by any means. However, it can identify allies, and follow and protect them.<br>
+      <br>Every 30 days, it can repeat the save, ending the spell on a success. Greater Restoration, Heal, and Wish also end it.</p>
+    </div>
+                                      
+    <button class="accordion">Glibness</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Self<br><b>Components</b>:V<br><b>Duration</b>: 1 hour<br></p>
+      <p>You can replace the rolls of Charisma checks with a 15, and all magic that detects truthfulness indicates that you're being so.</p>
+    </div>
+                                          
+    <button class="accordion">Mind Blank</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S<br><b>Duration</b>: 24 hours<br></p>
+      <p>Touch a willing creature. It becomes immune to psychic damage and the charmed condition. Additionally, any effect that would sense its emotions, read its thoughts or alter its mind state fails, even if the attempt is from Wish. Divination spells also fail on it.</p>
+    </div>
+                                              
+    <button class="accordion">Power Word Stun</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V<br><b>Duration</b>: Instantaneous<br></p>
+      <p>A creature you can see is stunned if it has 150 hit points or less. Otherwise, nothing happens. The target can make a Constitution save at the end of its turns, being freed on a success.</p>
+    </div>
+    
+    <e6>Ninth Level</e6><br> 
+    
+    <button class="accordion">Foresight</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 minute<br><b>Range</b>: Touch<br><b>Components</b>:V, S, M (Hummingbird feather)<br><b>Duration</b>: 8 hours<br></p>
+      <p>Touch a willing creature. For 8 hours, it can't be surprised and has advantage on attack rolls, ability checks, and saves. In addition, other creatures have disadvantage on attack rolls against it. The spell ends if you cast it again before the time is up.</p>
+    </div>
+        
+    <button class="accordion">Mass Polymorph</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 120 feet<br><b>Components</b>:V, S, M (a caterpillar cocoon)<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>You transform up to ten creatures of your choice that you can see within range. An unwilling target must succeed on a Wisdom saving throw to resist the transformation. An unwilling shapechanger automatically succeeds on the save.<br>
+      <br>Each target assumes a beast form of your choice, and you can choose the same form or different ones for each target. The new form can be any beast you have seen whose challenge rating is equal to or less than the targets (or half the targets level, if the target doesnt have a challenge rating). The targets game statistics, including mental ability scores, are replaced by the statistics of the chosen beast, but the target retains its hit points, alignment, and personality.<br>
+      <br>Each target gains a number of temporary hit points equal to the hit points of its new form. These temporary hit points cant be replaced by temporary hit points from another source. A target reverts to its normal form when it has no more temporary hit points or it dies. If the spell ends before then, the creature loses all its temporary hit points and reverts to its normal form.<br>
+      <br>The creature is limited in the actions it can perform by the nature of its new form. It cant speak, cast spells, or do anything else that requires hands or speech.<br>
+      <br>The targets gear melds into the new form. The target cant activate, use, wield, or otherwise benefit from any of its equipment.</p>
+    </div>
+            
+    <button class="accordion">Power Word Heal</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: Touch<br><b>Components</b>:V, S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>A wave of healing energy washes over the creature you touch. The target regains all its hit points. If the creature is charmed, frightened, paralyzed, or stunned, the condition ends. If the creature is prone, it can use its reaction to stand up. This spell has no effect on undead or constructs.</p>
+    </div>
+                
+    <button class="accordion">Power Word Kill</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 60 feet<br><b>Components</b>:V<br><b>Duration</b>: Instantaneous<br></p>
+      <p>You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect (101 hp or more).</p>
+    </div>
+                    
+    <button class="accordion">Psychic Scream</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 90 feet<br><b>Components</b>:S<br><b>Duration</b>: Instantaneous<br></p>
+      <p>Up to ten creatures of your choice that you can see must make an Intelligence save. Creatures with an Intelligence of 2 or less are unaffected. On a fail, a target takes 14d6 psychic damage and is stunned. On a success, it takes half damage and isn't stunned. If a target is killed by this spell, its head explodes.<br>
+      <br>A stunned target can make an Intelligence save at the end of its turns. On a success, the stun ends.</p>
+    </div>
+                        
+    <button class="accordion">True Polymorph</button>
+    <div class="panel">
+      <p><b>Casting Time:</b> 1 action<br><b>Range</b>: 30 feet<br><b>Components</b>:V, S, M (a drop of mercury, a dollop of gum arabic, and a wisp of smoke)<br><b>Duration</b>: Concentration, up to 1 hour<br></p>
+      <p>Choose one creature or nonmagical object that you can see within range. You transform the creature into a different creature, the creature into an object, or the object into a creature (the object must be neither worn nor carried by another creature). The transformation lasts for the duration, or until the target drops to 0 hit points or dies. If you concentrate on this spell for the full duration, the transformation lasts until it is dispelled.<br>
+      <br>This spell has no effect on a shapechanger or a creature with 0 hit points. An unwilling creature can make a Wisdom saving throw, and if it succeeds, it is not affected by this spell.<br>
+      <br><b>Creature into Creature:</b> If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the targets (or its level, if the target does not have a challenge rating). The targets game statistics, including mental ability scores, are replaced by the statistics of the new form. It retains its alignment and personality.<br>
+      <br>The target assumes the hit points of its new form, and when it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage does not reduce the creatures normal form to 0 hit points, it is not knocked unconscious.<br>
+      <br>The creature is limited in the actions it can perform by the nature of its new form, and it cannot speak, cast spells, or take any other action that requires hands or speech unless its new form is capable of such actions.<br>
+      <br>The targets gear melds into the new form. The creature cannot activate, use, wield, or otherwise benefit from any of its equipment.<br>
+      <br><b>Object into Creature:</b> You can turn an object into any kind of creature, as long as the creatures size is no larger than the objects size and the creature’s challenge rating is 9 or lower. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The DM has the creatures statistics and resolves all of its actions and movement.<br>
+      <br>If the spell becomes permanent, you no longer control the creature. It might remain friendly to you, depending on how you have treated it.<br>
+      <br><b>Creature into Object:</b> If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form. The creature’s statistics become those of the object, and the creature has no memory of time spent in this form, after the spell ends and it returns to its normal form.</p>
+    </div>
+    
+    
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++){
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    }
+    else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+  </script>  
+    
+    
+  </div>
+</div>
+<footer id="footer">
+  <center><img src="dnd-logo.png" alt="logo" ></center>
+  </footer>
+</body>
+
+</html>
+
